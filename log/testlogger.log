@@ -1,0 +1,138 @@
+2019-04-01 16:52:22,883 [main] INFO aperture - URL is opened
+2019-04-01 16:52:22,904 [main] INFO aperture - Before Test
+2019-04-01 16:52:24,465 [main] INFO aperture - Before Test
+2019-04-01 16:52:24,786 [main] INFO aperture - entered username
+2019-04-01 16:52:24,889 [main] INFO aperture - clicked on next
+2019-04-01 16:52:26,327 [main] INFO aperture - entered password
+2019-04-01 16:52:27,074 [main] INFO aperture - click on signin
+2019-04-01 16:52:31,709 [main] INFO aperture - refrence contain :com.aperture.utilities.Waits@c9d0d6
+2019-04-01 16:52:31,721 [main] INFO aperture - Checking to click on Accounts
+2019-04-01 16:52:31,926 [main] INFO aperture - clicked on Accounts
+2019-04-01 16:52:32,728 [main] INFO aperture - user clicked on addAdd Account
+2019-04-01 16:52:32,850 [main] INFO aperture - entring customer group MCKZ
+2019-04-01 16:52:33,553 [main] INFO aperture - entering customer name Mckenzie
+2019-04-01 16:52:33,698 [main] INFO aperture - entering customer entity MNKZ_001
+2019-04-01 16:52:33,866 [main] INFO aperture - entering customer reporting manager Manoj Nautiyal
+2019-04-01 16:52:34,060 [main] INFO aperture - entring Account Manager Vandana Jain
+2019-04-01 16:52:34,310 [main] INFO aperture - entring country  India
+2019-04-01 16:52:34,651 [main] INFO aperture - entering customer email id vandana.jain@gspann.com
+2019-04-01 16:52:34,886 [main] INFO aperture - entering customer number 9896696802
+2019-04-01 16:52:34,997 [main] INFO aperture - checking timesheet NO
+2019-04-01 16:52:35,165 [main] INFO aperture - creating account 
+2019-04-01 16:54:12,820 [main] INFO aperture - URL is opened
+2019-04-01 16:54:12,839 [main] INFO aperture - Before Test
+2019-04-01 16:54:13,619 [main] INFO aperture - Before Test
+2019-04-01 16:54:13,899 [main] INFO aperture - entered username
+2019-04-01 16:54:14,022 [main] INFO aperture - clicked on next
+2019-04-01 16:54:15,975 [main] INFO aperture - entered password
+2019-04-01 16:54:16,665 [main] INFO aperture - click on signin
+2019-04-01 16:54:20,647 [main] INFO aperture - refrence contain :com.aperture.utilities.Waits@c9d0d6
+2019-04-01 16:54:20,658 [main] INFO aperture - Checking to click on Accounts
+2019-04-01 16:54:20,889 [main] INFO aperture - clicked on Accounts
+2019-04-01 16:54:21,633 [main] INFO aperture - user clicked on addAdd Account
+2019-04-01 16:54:21,755 [main] INFO aperture - entring customer group MCKZ
+2019-04-01 16:54:22,441 [main] INFO aperture - entering customer name Mckenzie
+2019-04-01 16:54:22,579 [main] INFO aperture - entering customer entity MNKZ_001
+2019-04-01 16:54:22,737 [main] INFO aperture - entering customer reporting manager Manoj Nautiyal
+2019-04-01 16:54:22,916 [main] INFO aperture - entring Account Manager Vandana Jain
+2019-04-01 16:54:23,165 [main] INFO aperture - entring country  India
+2019-04-01 16:54:23,458 [main] INFO aperture - entering customer email id vandana.jain@gspann.com
+2019-04-01 16:54:23,718 [main] INFO aperture - entering customer number 9896696802
+2019-04-01 16:54:23,824 [main] INFO aperture - checking timesheet NO
+2019-04-01 16:54:23,983 [main] INFO aperture - creating account 
+2019-04-01 17:00:35,826 [main] INFO aperture - URL is opened
+2019-04-01 17:00:35,840 [main] INFO aperture - ===============================
+2019-04-01 17:00:35,848 [main] INFO aperture - Before Test
+2019-04-01 17:00:36,639 [main] INFO aperture - ===============================
+2019-04-01 17:00:36,640 [main] INFO aperture - Before Test
+2019-04-01 17:00:36,863 [main] INFO aperture - entered username
+2019-04-01 17:00:36,979 [main] INFO aperture - clicked on next
+2019-04-01 17:00:39,102 [main] INFO aperture - entered password
+2019-04-01 17:00:39,758 [main] INFO aperture - click on signin
+2019-04-01 17:00:44,249 [main] INFO aperture - refrence contain :com.aperture.utilities.Waits@7b420819
+2019-04-01 17:00:44,261 [main] INFO aperture - ===============================
+2019-04-01 17:00:44,263 [main] INFO aperture - Checking to click on Accounts
+2019-04-01 17:00:44,322 [main] INFO aperture - ===============================
+2019-04-01 17:00:44,324 [main] INFO aperture - Checking to click on Accounts
+2019-04-01 17:00:44,512 [main] INFO aperture - clicked on Accounts
+2019-04-01 17:00:45,356 [main] INFO aperture - ===============================
+2019-04-01 17:00:45,366 [main] INFO aperture - ===============================
+2019-04-01 17:00:45,427 [main] INFO aperture - user clicked on addAdd Account
+2019-04-01 17:00:45,427 [main] INFO aperture - ===============================
+2019-04-01 17:00:45,588 [main] INFO aperture - entring customer group MCKZ
+2019-04-01 17:00:46,342 [main] INFO aperture - entering customer name Mckenzie
+2019-04-01 17:00:46,541 [main] INFO aperture - entering customer entity MNKZ_001
+2019-04-01 17:00:46,841 [main] INFO aperture - entering customer reporting manager Manoj Nautiyal
+2019-04-01 17:00:47,080 [main] INFO aperture - entring Account Manager Vandana Jain
+2019-04-01 17:00:47,363 [main] INFO aperture - entring country  India
+2019-04-01 17:00:47,794 [main] INFO aperture - entering customer email id vandana.jain@gspann.com
+2019-04-01 17:00:48,064 [main] INFO aperture - entering customer number 9896696802
+2019-04-01 17:00:48,201 [main] INFO aperture - checking timesheet NO
+2019-04-01 17:00:48,377 [main] INFO aperture - creating account 
+2019-04-01 17:00:48,783 [main] INFO aperture - ===============================
+2019-04-02 12:40:30,038 [main] INFO aperture - URL is opened
+2019-04-02 12:40:30,141 [main] INFO aperture - ===============================
+2019-04-02 12:40:35,316 [main] INFO aperture - ===============================
+2019-04-02 12:40:35,852 [main] INFO aperture - entered username
+2019-04-02 12:40:36,099 [main] INFO aperture - clicked on next
+2019-04-02 12:40:37,565 [main] INFO aperture - entered password
+2019-04-02 12:40:38,238 [main] INFO aperture - click on signin
+2019-04-02 12:40:42,561 [main] INFO aperture - ===============================
+2019-04-02 12:40:42,567 [main] INFO aperture - refrence contain :com.aperture.utilities.Waits@61544ae6
+2019-04-02 12:40:42,734 [main] INFO aperture - on timesheet refrence Timesheet
+2019-04-02 12:40:42,851 [main] INFO aperture - refrence contain :com.aperture.utilities.Waits@61544ae6 2
+2019-04-02 12:40:42,852 [main] INFO aperture - we are on mytimesheet page
+2019-04-02 12:40:42,884 [main] INFO aperture - mytimesheet page link is [[ChromeDriver: chrome on XP (62232fbe6c0ea2b402841cf8f7a59e97)] -> xpath: //*[@id='navbarResponsive']/ul/li[1]/ul/li[1]/a]
+2019-04-02 12:40:42,970 [main] INFO aperture - on my timesheet refrence My Timesheet
+2019-04-02 12:40:43,074 [main] INFO aperture - refrence contain :com.aperture.utilities.Waits@50d13246
+2019-04-02 12:40:43,075 [main] INFO aperture - we are on mytimesheet page
+2019-04-02 12:40:43,115 [main] INFO aperture - mytimesheet page link is [[ChromeDriver: chrome on XP (62232fbe6c0ea2b402841cf8f7a59e97)] -> xpath: //*[@id='navbarResponsive']/ul/li[1]/ul/li[1]/a]
+2019-04-02 12:41:37,198 [main] INFO aperture - URL is opened
+2019-04-02 12:41:37,214 [main] INFO aperture - ===============================
+2019-04-02 12:41:38,086 [main] INFO aperture - ===============================
+2019-04-02 12:41:38,571 [main] INFO aperture - entered username
+2019-04-02 12:41:38,718 [main] INFO aperture - clicked on next
+2019-04-02 12:41:41,004 [main] INFO aperture - entered password
+2019-04-02 12:41:41,996 [main] INFO aperture - click on signin
+2019-04-02 12:41:46,137 [main] INFO aperture - ===============================
+2019-04-02 12:41:46,144 [main] INFO aperture - refrence contain :com.aperture.utilities.Waits@61544ae6
+2019-04-02 12:41:46,219 [main] INFO aperture - on timesheet refrence Timesheet
+2019-04-02 12:41:46,301 [main] INFO aperture - refrence contain :com.aperture.utilities.Waits@61544ae6 2
+2019-04-02 12:41:46,302 [main] INFO aperture - we are on mytimesheet page
+2019-04-02 12:41:46,325 [main] INFO aperture - mytimesheet page link is [[ChromeDriver: chrome on XP (d501abb6171a7649f584c6d622335932)] -> xpath: //*[@id='navbarResponsive']/ul/li[1]/ul/li[1]/a]
+2019-04-02 12:41:46,490 [main] INFO aperture - on my timesheet refrence My Timesheet
+2019-04-02 12:41:46,635 [main] INFO aperture - refrence contain :com.aperture.utilities.Waits@50d13246
+2019-04-02 12:41:46,635 [main] INFO aperture - we are on mytimesheet page
+2019-04-02 12:41:46,671 [main] INFO aperture - mytimesheet page link is [[ChromeDriver: chrome on XP (d501abb6171a7649f584c6d622335932)] -> xpath: //*[@id='navbarResponsive']/ul/li[1]/ul/li[1]/a]
+2019-04-02 12:58:33,010 [main] INFO aperture - URL is opened
+2019-04-02 12:58:33,024 [main] INFO aperture - ===============================
+2019-04-02 13:11:22,527 [main] INFO aperture - URL is opened
+2019-04-02 13:11:22,563 [main] INFO aperture - ===============================
+2019-04-02 13:11:26,915 [main] INFO aperture - ===============================
+2019-04-02 13:11:27,316 [main] INFO aperture - entered username
+2019-04-02 13:11:27,467 [main] INFO aperture - clicked on next
+2019-04-02 13:11:29,075 [main] INFO aperture - entered password
+2019-04-02 13:11:30,391 [main] INFO aperture - click on signin
+2019-04-02 13:11:59,931 [main] INFO aperture - URL is opened
+2019-04-02 13:11:59,934 [main] INFO aperture - ===============================
+2019-04-02 13:12:00,604 [main] INFO aperture - ===============================
+2019-04-02 13:12:01,479 [main] INFO aperture - entered username
+2019-04-02 13:12:01,576 [main] INFO aperture - clicked on next
+2019-04-02 13:12:03,074 [main] INFO aperture - entered password
+2019-04-02 13:12:03,733 [main] INFO aperture - click on signin
+2019-04-02 13:12:07,924 [main] INFO aperture - ===============================
+2019-04-02 13:12:07,934 [main] INFO aperture - refrence contain :com.aperture.utilities.Waits@1b9ea3e3
+2019-04-02 13:12:08,026 [main] INFO aperture - on timesheet refrence Timesheet
+2019-04-02 13:12:08,100 [main] INFO aperture - refrence contain :com.aperture.utilities.Waits@1b9ea3e3 2
+2019-04-02 13:12:08,101 [main] INFO aperture - we are on mytimesheet page
+2019-04-02 13:12:08,124 [main] INFO aperture - mytimesheet page link is [[ChromeDriver: chrome on XP (deb1fda4ebc5e054851b46c055def0dc)] -> xpath: //*[@id='navbarResponsive']/ul/li[1]/ul/li[1]/a]
+2019-04-02 13:12:08,169 [main] INFO aperture - on my timesheet refrence My Timesheet
+2019-04-02 13:12:08,236 [main] INFO aperture - ===============================
+2019-04-02 13:12:08,238 [main] INFO aperture - refrence contain :com.aperture.utilities.Waits@4d411036
+2019-04-02 13:12:08,282 [main] INFO aperture - on timesheet refrence Timesheet
+2019-04-02 13:12:09,989 [main] INFO aperture - refrence contain :com.aperture.utilities.Waits@4d411036 2
+2019-04-02 13:12:09,990 [main] INFO aperture - we are on mytimesheet page
+2019-04-02 13:12:10,011 [main] INFO aperture - mytimesheet page link is [[ChromeDriver: chrome on XP (deb1fda4ebc5e054851b46c055def0dc)] -> xpath: //*[@id='navbarResponsive']/ul/li[1]/ul/li[1]/a]
+2019-04-02 13:12:10,046 [main] INFO aperture - on my timesheet refrence My Timesheet
+2019-04-02 13:12:10,582 [main] INFO aperture - ===============================
+2019-04-02 13:12:10,587 [main] INFO aperture - ===============================

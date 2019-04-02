@@ -1,0 +1,30 @@
+2019-04-02 13:11:22,527 - aperture -INFO - URL is opened
+2019-04-02 13:11:22,563 - aperture -INFO - ===============================
+2019-04-02 13:11:26,915 - aperture -INFO - ===============================
+2019-04-02 13:11:27,316 - aperture -INFO - entered username
+2019-04-02 13:11:27,467 - aperture -INFO - clicked on next
+2019-04-02 13:11:29,075 - aperture -INFO - entered password
+2019-04-02 13:11:30,391 - aperture -INFO - click on signin
+2019-04-02 13:11:59,931 - aperture -INFO - URL is opened
+2019-04-02 13:11:59,934 - aperture -INFO - ===============================
+2019-04-02 13:12:00,604 - aperture -INFO - ===============================
+2019-04-02 13:12:01,479 - aperture -INFO - entered username
+2019-04-02 13:12:01,576 - aperture -INFO - clicked on next
+2019-04-02 13:12:03,074 - aperture -INFO - entered password
+2019-04-02 13:12:03,733 - aperture -INFO - click on signin
+2019-04-02 13:12:07,924 - aperture -INFO - ===============================
+2019-04-02 13:12:07,934 - aperture -INFO - refrence contain :com.aperture.utilities.Waits@1b9ea3e3
+2019-04-02 13:12:08,026 - aperture -INFO - on timesheet refrence Timesheet
+2019-04-02 13:12:08,100 - aperture -INFO - refrence contain :com.aperture.utilities.Waits@1b9ea3e3 2
+2019-04-02 13:12:08,101 - aperture -INFO - we are on mytimesheet page
+2019-04-02 13:12:08,124 - aperture -INFO - mytimesheet page link is [[ChromeDriver: chrome on XP (deb1fda4ebc5e054851b46c055def0dc)] -> xpath: //*[@id='navbarResponsive']/ul/li[1]/ul/li[1]/a]
+2019-04-02 13:12:08,169 - aperture -INFO - on my timesheet refrence My Timesheet
+2019-04-02 13:12:08,236 - aperture -INFO - ===============================
+2019-04-02 13:12:08,238 - aperture -INFO - refrence contain :com.aperture.utilities.Waits@4d411036
+2019-04-02 13:12:08,282 - aperture -INFO - on timesheet refrence Timesheet
+2019-04-02 13:12:09,989 - aperture -INFO - refrence contain :com.aperture.utilities.Waits@4d411036 2
+2019-04-02 13:12:09,990 - aperture -INFO - we are on mytimesheet page
+2019-04-02 13:12:10,011 - aperture -INFO - mytimesheet page link is [[ChromeDriver: chrome on XP (deb1fda4ebc5e054851b46c055def0dc)] -> xpath: //*[@id='navbarResponsive']/ul/li[1]/ul/li[1]/a]
+2019-04-02 13:12:10,046 - aperture -INFO - on my timesheet refrence My Timesheet
+2019-04-02 13:12:10,582 - aperture -INFO - ===============================
+2019-04-02 13:12:10,587 - aperture -INFO - ===============================

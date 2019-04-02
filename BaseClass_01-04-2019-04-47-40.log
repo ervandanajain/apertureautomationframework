@@ -1,0 +1,21 @@
+2019-04-01 16:47:49,683 - aperture -INFO - URL is opened
+2019-04-01 16:47:49,707 - aperture -INFO - Before Test
+2019-04-01 16:47:52,986 - aperture -INFO - Before Test
+2019-04-01 16:47:53,217 - aperture -INFO - entered username
+2019-04-01 16:47:53,349 - aperture -INFO - clicked on next
+2019-04-01 16:47:55,278 - aperture -INFO - entered password
+2019-04-01 16:47:55,940 - aperture -INFO - click on signin
+2019-04-01 16:47:59,877 - aperture -INFO - refrence contain :com.aperture.utilities.Waits@c9d0d6
+2019-04-01 16:47:59,887 - aperture -INFO - Checking to click on Accounts
+2019-04-01 16:48:00,162 - aperture -INFO - clicked on Accounts
+2019-04-01 16:48:00,992 - aperture -INFO - user clicked on addAdd Account
+2019-04-01 16:48:01,107 - aperture -INFO - entring customer group MCKZ
+2019-04-01 16:48:02,345 - aperture -INFO - entering customer name Mckenzie
+2019-04-01 16:48:02,476 - aperture -INFO - entering customer entity MNKZ_001
+2019-04-01 16:48:02,618 - aperture -INFO - entering customer reporting manager Manoj Nautiyal
+2019-04-01 16:48:02,796 - aperture -INFO - entring Account Manager Vandana Jain
+2019-04-01 16:48:03,031 - aperture -INFO - entring country  India
+2019-04-01 16:48:03,347 - aperture -INFO - entering customer email id vandana.jain@gspann.com
+2019-04-01 16:48:03,601 - aperture -INFO - entering customer number 9896696802
+2019-04-01 16:48:03,710 - aperture -INFO - checking timesheet NO
+2019-04-01 16:48:03,855 - aperture -INFO - creating account 

@@ -1,0 +1,30 @@
+2019-04-01 17:00:35,826 - aperture -INFO - URL is opened
+2019-04-01 17:00:35,840 - aperture -INFO - ===============================
+2019-04-01 17:00:35,848 - aperture -INFO - Before Test
+2019-04-01 17:00:36,639 - aperture -INFO - ===============================
+2019-04-01 17:00:36,640 - aperture -INFO - Before Test
+2019-04-01 17:00:36,863 - aperture -INFO - entered username
+2019-04-01 17:00:36,979 - aperture -INFO - clicked on next
+2019-04-01 17:00:39,102 - aperture -INFO - entered password
+2019-04-01 17:00:39,758 - aperture -INFO - click on signin
+2019-04-01 17:00:44,249 - aperture -INFO - refrence contain :com.aperture.utilities.Waits@7b420819
+2019-04-01 17:00:44,261 - aperture -INFO - ===============================
+2019-04-01 17:00:44,263 - aperture -INFO - Checking to click on Accounts
+2019-04-01 17:00:44,322 - aperture -INFO - ===============================
+2019-04-01 17:00:44,324 - aperture -INFO - Checking to click on Accounts
+2019-04-01 17:00:44,512 - aperture -INFO - clicked on Accounts
+2019-04-01 17:00:45,356 - aperture -INFO - ===============================
+2019-04-01 17:00:45,366 - aperture -INFO - ===============================
+2019-04-01 17:00:45,427 - aperture -INFO - user clicked on addAdd Account
+2019-04-01 17:00:45,427 - aperture -INFO - ===============================
+2019-04-01 17:00:45,588 - aperture -INFO - entring customer group MCKZ
+2019-04-01 17:00:46,342 - aperture -INFO - entering customer name Mckenzie
+2019-04-01 17:00:46,541 - aperture -INFO - entering customer entity MNKZ_001
+2019-04-01 17:00:46,841 - aperture -INFO - entering customer reporting manager Manoj Nautiyal
+2019-04-01 17:00:47,080 - aperture -INFO - entring Account Manager Vandana Jain
+2019-04-01 17:00:47,363 - aperture -INFO - entring country  India
+2019-04-01 17:00:47,794 - aperture -INFO - entering customer email id vandana.jain@gspann.com
+2019-04-01 17:00:48,064 - aperture -INFO - entering customer number 9896696802
+2019-04-01 17:00:48,201 - aperture -INFO - checking timesheet NO
+2019-04-01 17:00:48,377 - aperture -INFO - creating account 
+2019-04-01 17:00:48,783 - aperture -INFO - ===============================

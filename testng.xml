@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="2">
+	<listeners>
+		<listener class-name="com.aperture.utilities.Reporting" />
+		<listener
+			class-name="com.aperture.utilities.ListnerTransformer" />
+		<listener class-name="com.aperture.utilities.ListnerInvoke" />
+	</listeners>
+	<parameter name="browser" value="chrome" />
+	<test name="Login">
+		<classes>
+			<class name="com.aperture.testcases.LoginPage_Test"></class>
+		</classes>
+	</test>
+	<test name="Timesheet1">
+		<classes>
+			<class name="com.aperture.testcases.TimesheetSubmission_Test"></class>
+		</classes>
+	</test>
+	<test name="Timesheet 2">
+		<classes>
+			<class name="com.aperture.testcases.CheckHoursInTimesheet_Test" />
+		</classes>
+	</test>
+	<test name="Account">
+		<classes>
+			<class name="com.aperture.testcases.Add_Account_Test" />
+		</classes>
+	</test>
+	<test name="SearchAccount">
+		<classes>
+			<class name="com.aperture.testcases.Search_Account_Test"></class>
+		</classes>
+	</test>
+	<test name="Project">
+		<classes>
+			<class name="com.aperture.testcases.Add_Project_Test"></class>
+		</classes>
+	</test>
+	<test name="Resource">
+		<classes>
+			<class name="com.aperture.testcases.Add_Resource_Test" />
+		</classes>
+	</test>
+	<test name="SearchProject">
+		<classes>
+			<class name="com.aperture.testcases.Search_Project_Test" />
+		</classes>
+	</test>
+	<test name="SearchResource">
+		<classes>
+			<class name="com.aperture.testcases.Search_Resource_Test" />
+		</classes>
+	</test>
+
+
+</suite>
