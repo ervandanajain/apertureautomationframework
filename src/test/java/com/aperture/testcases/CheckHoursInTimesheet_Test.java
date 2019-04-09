@@ -27,7 +27,7 @@ public class CheckHoursInTimesheet_Test extends BaseClass {
 	{
 		LoginPage_Test testloginpage = new LoginPage_Test();
 		testloginpage.loginTest();
-		checkhours=new CheckHoursInTimesheet(driver);
+		checkhours=new CheckHoursInTimesheet(driver,logger);
 		navigation = new NavigationMenu_Test();
 	
 		

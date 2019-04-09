@@ -2,22 +2,30 @@ package com.aperture.pageobjects;
 
 import java.util.List;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
+
+import com.aperture.reusablecode.CommonMethods;
 import com.aperture.utilities.Waits;
 
 public class AddProject {
 	WebDriver ldriver;
+	Logger llogger;
 	AddProject addproject;
-	public AddProject(WebDriver rdriver) {
+	CommonMethods commonmethods;
+	public AddProject(WebDriver rdriver,Logger rlogger) {
 		ldriver = rdriver;
+		llogger=rlogger;
 		PageFactory.initElements(ldriver, this);
 		wait = new Waits(ldriver, 30000);
-		System.out.println("refrence contain :" + wait);
+		llogger.info("refrence contain :" + wait);
+		commonmethods=new CommonMethods(ldriver, llogger);
 	}
 	
 	
@@ -118,6 +126,8 @@ public class AddProject {
 	@CacheLookup
 	WebElement btnCreateProject;
 	
+	@FindBy(xpath="//li[contains(@class,'nav-item active')]")
+	WebElement activelink;
 	
 	String commonXpath = "//div[contains(@class,'mat-autocomplete-panel')]/mat-option//*[starts-with(text(), '%s')]";
 
@@ -125,179 +135,100 @@ public class AddProject {
 	public void clickOnAddProject()
 	{
 		wait.waitTillElementToBeClickable(btnAddProject);
-		System.out.println("on add account  refrence "+btnAddProject.getText());
+		llogger.info("user clicked on add account "+btnAddProject.getText());
 		btnAddProject.click();
 	}
 	
 	public void clickOnMainDiv()
 	{
 		wait.waitTillElementToBeClickable(maindiv);
-		System.out.println("clicking on main div");
+		llogger.info("user clicked  on main div");
 		maindiv.click();
 	}
 	
 	public void enterAccountCode(String accountcode)
 	{
-		wait.waitTillElementToBeClickable(txtAccountCode);
-		System.out.println("entring account code  ");
-		txtAccountCode.clear();
-		txtAccountCode.sendKeys(accountcode);
-		ldriver.findElement(By.xpath(String.format(commonXpath," " +accountcode))).click();
-		}
+		commonmethods.selectFromList(accountcode,"Account Code", txtAccountCode);	}
 	
 	public void enterCustomerProject(String customerproject)
 	{
-		wait.waitTillElementToBeClickable(txtCustomerProject);
-		System.out.println("entering customer name ");
-		txtCustomerProject.sendKeys(customerproject);
+		commonmethods.enterValue(customerproject,"Customer Project ", txtCustomerProject);
 	}
 	
 	public void enterCustomerManager(String customerManager)
 	{
-		wait.waitTillElementToBeClickable(txtCustomerManager);
-		System.out.println("entering customer  manager ");
-		txtCustomerManager.sendKeys(customerManager);
+		commonmethods.enterValue(customerManager,"Customer Manager ", txtCustomerManager);
 	}
 	
 	public void enterCustomerProjectName(String customerprojectname)
 	{
-		wait.waitTillElementToBeClickable(txtCustomerProjectName);
-		System.out.println("entring Customer Project Name ");
-		txtCustomerProjectName.clear();
-		txtCustomerProjectName.sendKeys(customerprojectname);
+		commonmethods.enterValue(customerprojectname,"Customer Project Name", txtCustomerProjectName);
 	}
 	
 	public void enterProjectName(String projectname)
 	{
-		wait.waitTillElementToBeClickable(txtProjectName);
-		System.out.println("entring Project Name ");
-		txtProjectName.clear();
-		txtProjectName.sendKeys(projectname);
+		commonmethods.enterValue(projectname," Project Name", txtProjectName);
 	}
 	
 	public void enterOnshoreManager(String onshoremanager)
 	{
-		wait.waitTillElementToBeClickable(txtOnshoreManager);
-		System.out.println("entring onshoremanager manager ");
-		txtOnshoreManager.clear();
-		txtOnshoreManager.sendKeys(onshoremanager);
-		ldriver.findElement(By.xpath(String.format(commonXpath, onshoremanager))).click();
-		
+		commonmethods.selectFromList(onshoremanager,"Onshore manager", txtOnshoreManager);	
 	}
 	
 	
 	public void enterOffshoreManager(String offshoremanager)
 	{
-		wait.waitTillElementToBeClickable(txtOffshoreManager);
-		System.out.println("entring offshore manager ");
-		txtOffshoreManager.clear();
-		txtOffshoreManager.sendKeys(offshoremanager);
-		ldriver.findElement(By.xpath(String.format(commonXpath, offshoremanager))).click();
-		
+		commonmethods.selectFromList(offshoremanager,"off shore manager", txtOffshoreManager);
 	}
 	
 	
 	public void enterProjectType(String projecttype)
 	{
-		wait.waitTillElementToBeClickable(txtProjectTypeCode);
-		System.out.println("entring project type ");
-		txtProjectTypeCode.clear();
-		txtProjectTypeCode.sendKeys(projecttype);
-		ldriver.findElement(By.xpath(String.format(commonXpath," " +  projecttype))).click();
-		
+		commonmethods.selectFromList(projecttype,"Project Type", txtProjectTypeCode);
 	}
 	
 	
 	public void enterCountry(String country)
 	{
-		wait.waitTillElementToBeClickable(txtCountry);
-		System.out.println("entring country ");
-		txtCountry.clear();
-		txtCountry.sendKeys(country);
-		ldriver.findElement(By.xpath(String.format(commonXpath," " + country))).click();
-		
+		commonmethods.selectFromList(country,"country", txtCountry);
 	}
 	
-	public void selectPractices()
+	public void selectPractices(String[] practicename)
 	{
-		wait.waitTillElementToBeClickable(selectPractices);
-		System.out.println("selecting Practices ");
-		selectPractices.click();
 		
-		
+		commonmethods.selectFromCheckBoxList(selectPractices,"Practices",practicename,txtPracticesSelect,listpractices);
 	}
-	
-	public void enterPractices(String[] practicename)
-	{
-		addproject=new AddProject(ldriver);
-		wait.waitTillElementToBeClickable(txtCustomerManager);
-		System.out.println("entering practice in searchbox ");
-		for(int j=0;j<practicename.length;j++) {
-			txtPracticesSelect.clear();
-		txtPracticesSelect.sendKeys(practicename[j]);
-		addproject.selectPractice(practicename[j]);
-		}
-	}
-	
-	public  void selectPractice(String practicename)
-	{
-		for(int i=0;i<=listpractices.size()+1;i++) {
-			
-			//System.out.println("At row num "+i+"->"+listpractices.get(i).getText());
-			if(listpractices.get(i).getText().trim().equals(practicename)) {
-				System.out.println("Printing elements in array "+ practicename);
-				System.out.println(listpractices.get(i).getText().trim());
-				listpractices.get(i).click();
-				break;
-			}
-		}
-	}
+
 	
 	
 	public void enterProjectStatus(String projectstatus)
 	{
-		wait.waitTillElementToBeClickable(txtProjectStatus);
-		System.out.println("entring project status ");
-		txtProjectStatus.clear();
-		txtProjectStatus.sendKeys(projectstatus);
-		ldriver.findElement(By.xpath(String.format(commonXpath," " +  projectstatus))).click();
-		
+		commonmethods.selectFromList(projectstatus,"Project Status", txtProjectStatus);
 	}
 	
 	
 	public void enterTechnology(String[] projecttechnology)
 	{
-		wait.waitTillElementToBeClickable(txtProjectTechnologies);
-		System.out.println("entring project technology ");
-		for(int i=0;i<projecttechnology.length;i++) {
-		txtProjectTechnologies.clear();
-		txtProjectTechnologies.sendKeys(projecttechnology[i]+" ,");
-		ldriver.findElement(By.xpath(String.format(commonXpath," " +  projecttechnology[i]))).click();
-//		txtCountry.sendKeys(country);
-	}
+		commonmethods.enterValues(projecttechnology,"Technology ",txtProjectTechnologies);
 	}
 	
 	public void enterProjectStartDate(String startdate)
 	{
-		wait.waitTillElementToBeClickable(txtStartDate);
-		System.out.println("entering start date");
-		txtStartDate.sendKeys(startdate);
+		commonmethods.enterValue(startdate,"Start Date ", txtStartDate);
 	}
 	
 	public void enterProjectEndDate(String enddate)
 	{
-		wait.waitTillElementToBeClickable(txtEndDate);
-		System.out.println("entering project enddate ");
-		txtEndDate.sendKeys(enddate);
+		commonmethods.enterValue(enddate,"End Date ", txtEndDate);
 	}
 	
 	
 	
 	public void clickOnCreateProject()
 	{
-		//wait.waitTillElementToBeClickable(radiotimetrack);
-		System.out.println("creating account ");
+		wait.waitTillElementToBeClickable(btnCreateProject);
 		btnCreateProject.click();
+		llogger.info("user clicked  on creating project "+btnCreateProject.getText());
 		
 	}
 

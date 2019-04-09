@@ -34,6 +34,7 @@ public class NavigationMenu {
 	@FindBy(xpath="//a[@routerlink='/resource/search-resource']//*[text()='Resource']")
 	@CacheLookup
 	WebElement linkResource;
+	
 	public void clickOnTimeSheet(){
 		//WebElement linktimesheet=ldriver.findElement(By.xpath("/html/body/jhi-main/div[2]/div/jhi-home/div/div/div/div/span"));
 		wait.waitTillElementToBeClickable(linktimesheet);

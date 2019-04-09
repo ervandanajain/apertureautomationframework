@@ -1,5 +1,6 @@
 package com.aperture.pageobjects;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,15 +14,17 @@ import com.aperture.utilities.Waits;
 
 public class CheckHoursInTimesheet  {
 	WebDriver ldriver;
+	Logger llogger;
 	Waits wait;
 	CheckHoursInTimesheet checkhours;
 
 
-	public CheckHoursInTimesheet(WebDriver rdriver) {
+	public CheckHoursInTimesheet(WebDriver rdriver,Logger rlogger) {
 		ldriver = rdriver;
+		llogger=rlogger;
 		PageFactory.initElements(ldriver, this);
 		wait = new Waits(ldriver, 30000);
-		System.out.println("refrence contain :" + wait);
+		llogger.info("refrence contain :" + wait);
 	}
 	
 	@FindBy(id = "main-heading")
@@ -65,22 +68,25 @@ public class CheckHoursInTimesheet  {
 
 	public String checkstatus() {
 		wait.waitTillElementToBeClickable(checkstatus);
+		llogger.info("user checking status of timesheet " + checkstatus);
 		return checkstatus.getText();
 
 	}
 
 	public void clickOnNext() {
 		wait.waitTillElementToBeClickable(btnnexttimesheet);
+		llogger.info("user clicked on next " + btnnexttimesheet.getText());
 		btnnexttimesheet.click();
 	}
 	
 	public void fillWeeklyTimeSheet(int hours) {
 		String locator = null;
 		for (int i = 0; i <= 4; i++) {
+			llogger.info("user filling timesheet ");
 			locator = "//*[@id='0-" + i + "']";
-			System.out.println("locator of timesheet area is "+locator);
+			llogger.info("locator of timesheet area is "+locator);
 			WebElement weeklyTime = ldriver.findElement(By.xpath(locator));
-			System.out.println("Driver is " + ldriver +" Element is "+ weeklyTime);
+			llogger.info("Driver is " + ldriver +" Element is "+ weeklyTime);
 			wait.waitTillVisibilityOf(weeklyTime);
 			String hour= Integer.toString(hours);
 			weeklyTime.clear();
@@ -88,36 +94,36 @@ public class CheckHoursInTimesheet  {
 		}		
 		}
 	public void clickOnTimeSheetSubmit() {
-		System.out.println("click on timesheet submit button");
+		llogger.info("user clicked on timesheet submit button");
 		wait.waitTillElementToBeClickable(btntimesheetsubmit);
 		btntimesheetsubmit.click();
 	}
 	
 	public String checkPopUpType() {
-		checkhours=new CheckHoursInTimesheet(ldriver);
+		checkhours=new CheckHoursInTimesheet(ldriver,llogger);
 		//wait.waitTillVisibilityOf(commentBoxMessage);
 		ldriver.switchTo().activeElement();
-		System.out.println("Alert box  " +commentBoxMessage.isDisplayed());
-		//System.out.println("Comment box  " +enterComment.isDisplayed());
-		System.out.println("Comment  box  ");
-		System.out.println("in check popup type box ");
-		System.out.println("in check popup type box ");
+		llogger.info("Alert box  " +commentBoxMessage.isDisplayed());
+		//llogger.info("Comment box  " +enterComment.isDisplayed());
+		llogger.info("Comment  box  ");
+		llogger.info("in check popup type box ");
+		llogger.info("in check popup type box ");
 		String type="false";
 		
 			try {
 				if(commentBoxMessage.isDisplayed()) {
-			System.out.println("alert box "+ commentBoxMessage);
+			llogger.info("alert box "+ commentBoxMessage);
 		type= "alertmessage"; }
 		else 
 		{
-		System.out.println(" Nothing returned");
+		llogger.info(" Nothing returned");
 		type=  "false";
 		}}
 			catch (Exception e) {
 				//if(!commentBoxMessage.isDisplayed()) {
-					System.out.println("Trying comment box and got exception" +e.getMessage());
+					llogger.info("Trying comment box and got exception" +e.getMessage());
 					if(enterComment.isDisplayed())
-					System.out.println("comment box "+ enterComment);
+					llogger.info("comment box "+ enterComment);
 					type=  "commentbox";}
 			
 		
@@ -128,7 +134,7 @@ public class CheckHoursInTimesheet  {
 	
 	public boolean handlePopUp(String type,String expectedType,String msg)
 	{
-		System.out.println("Returned type is "+ type);
+		llogger.info("Returned type is "+ type);
 		if(type=="alertmessage") {
 			boolean isFound =checkhours.getCommentBoxMesage().contains(msg);
 			Assert.assertTrue(isFound);
@@ -149,13 +155,14 @@ public class CheckHoursInTimesheet  {
 	
 	public  String getCommentBoxMesage() {
 		wait.waitTillVisibilityOf(commentBoxMessage);
-		System.out.println("CommentBox xpath is " + commentBoxMessage);
+		llogger.info("CommentBox xpath is " + commentBoxMessage);
 		return commentBoxMessage.getText();
 	}
 	
 	public  void enterCommentMessage(String msg) {
 		//wait.waitTillElementToBeClickable(commentDialogbox);
 		wait.waitTillVisibilityOf(enterComment);
+		llogger.info("user entered comment message " + msg);
 		Actions action =new Actions(ldriver);
 		action.moveToElement(commentDialogbox).click().build();
 		System.out.println("Comment box xpath is  "+enterComment);

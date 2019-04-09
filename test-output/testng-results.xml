@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="3" failed="1" ignored="0" total="7" passed="3">
+<testng-results skipped="3" failed="11" ignored="0" total="21" passed="7">
   <reporter-output>
     <line>
       <![CDATA[Retrying test runlogin with status FAILURE]]>
@@ -8,27 +8,73 @@
       <![CDATA[Retrying test runlogin with status SUCCESS]]>
     </line>
     <line>
-      <![CDATA[Retrying test navigate_To_Account with status FAILURE]]>
+      <![CDATA[Retrying test navigate_To_Project with status SUCCESS]]>
     </line>
     <line>
-      <![CDATA[Retrying test navigate_To_Account with status SUCCESS]]>
+      <![CDATA[Retrying test clickOnAddAccount with status SUCCESS]]>
     </line>
     <line>
-      <![CDATA[Retrying test fetchdatafromexcel with status SUCCESS]]>
+      <![CDATA[Retrying test addProjectPositiveCases with status SUCCESS]]>
     </line>
     <line>
-      <![CDATA[Retrying test createAccountPositiveCase with status FAILURE]]>
+      <![CDATA[Retrying test addProjectPositiveCases with status FAILURE]]>
     </line>
     <line>
-      <![CDATA[Retrying test createAccountPositiveCase with status FAILURE]]>
+      <![CDATA[Retrying test addProjectPositiveCases with status SUCCESS]]>
+    </line>
+    <line>
+      <![CDATA[Retrying test addProjectPositiveCases with status SUCCESS]]>
+    </line>
+    <line>
+      <![CDATA[Retrying test addProjectPositiveCases with status SUCCESS]]>
+    </line>
+    <line>
+      <![CDATA[Retrying test addProjectNegativeCases with status FAILURE]]>
+    </line>
+    <line>
+      <![CDATA[Retrying test addProjectNegativeCases with status FAILURE]]>
+    </line>
+    <line>
+      <![CDATA[Retrying test addProjectNegativeCases with status FAILURE]]>
+    </line>
+    <line>
+      <![CDATA[Retrying test addProjectNegativeCases with status FAILURE]]>
+    </line>
+    <line>
+      <![CDATA[Retrying test addProjectNegativeCases with status FAILURE]]>
+    </line>
+    <line>
+      <![CDATA[Retrying test addProjectNegativeCases with status FAILURE]]>
+    </line>
+    <line>
+      <![CDATA[Retrying test addProjectNegativeCases with status FAILURE]]>
+    </line>
+    <line>
+      <![CDATA[Retrying test addProjectNegativeCases with status FAILURE]]>
+    </line>
+    <line>
+      <![CDATA[Retrying test addProjectNegativeCases with status FAILURE]]>
+    </line>
+    <line>
+      <![CDATA[Retrying test addProjectNegativeCases with status FAILURE]]>
+    </line>
+    <line>
+      <![CDATA[Retrying test addProjectNegativeCases with status FAILURE]]>
+    </line>
+    <line>
+      <![CDATA[Retrying test addProjectNegativeCases with status FAILURE]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="28623" started-at="2019-04-01T11:30:21Z" finished-at="2019-04-01T11:30:50Z">
+  <suite name="Suite" duration-ms="596629" started-at="2019-04-09T07:40:00Z" finished-at="2019-04-09T07:49:57Z">
     <groups>
     </groups>
-    <test name="Account" duration-ms="28623" started-at="2019-04-01T11:30:21Z" finished-at="2019-04-01T11:30:50Z">
-      <class name="com.aperture.testcases.Add_Account_Test">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.aperture.testcases.Add_Account_Test@3fee9989]" name="setup" is-config="true" duration-ms="13665" started-at="2019-04-01T11:30:22Z" finished-at="2019-04-01T11:30:35Z">
+    <test name="Project" duration-ms="596629" started-at="2019-04-09T07:40:00Z" finished-at="2019-04-09T07:49:57Z">
+      <class name="com.aperture.testcases.Add_Project_Test">
+        <test-method status="PASS" signature="preSetup()[pri:0, instance:com.aperture.testcases.Add_Project_Test@2f686d1f]" name="preSetup" is-config="true" duration-ms="18" started-at="2019-04-09T07:40:00Z" finished-at="2019-04-09T07:40:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preSetup -->
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.aperture.testcases.Add_Project_Test@2f686d1f]" name="setup" is-config="true" duration-ms="10356" started-at="2019-04-09T07:40:00Z" finished-at="2019-04-09T07:40:11Z">
           <params>
             <param index="0">
               <value>
@@ -39,11 +85,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="addLogger()[pri:0, instance:com.aperture.testcases.Add_Account_Test@3fee9989]" name="addLogger" is-config="true" duration-ms="0" started-at="2019-04-01T11:30:35Z" finished-at="2019-04-01T11:30:35Z">
+        <test-method status="PASS" signature="addLogger()[pri:0, instance:com.aperture.testcases.Add_Project_Test@2f686d1f]" name="addLogger" is-config="true" duration-ms="1" started-at="2019-04-09T07:40:11Z" finished-at="2019-04-09T07:40:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addLogger -->
-        <test-method status="SKIP" signature="runlogin()[pri:0, instance:com.aperture.testcases.Add_Account_Test@3fee9989]" name="runlogin" duration-ms="756" started-at="2019-04-01T11:30:35Z" finished-at="2019-04-01T11:30:36Z">
+        <test-method status="SKIP" signature="runlogin()[pri:0, instance:com.aperture.testcases.Add_Project_Test@2f686d1f]" name="runlogin" duration-ms="1589" started-at="2019-04-09T07:40:11Z" finished-at="2019-04-09T07:40:12Z">
           <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
               <![CDATA[stale element reference: element is not attached to the page document
@@ -52,10 +98,10 @@
 Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'NODE923', ip: '10.210.3.209', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+System info: host: 'NODE923', ip: '10.210.1.60', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.20 (8e2b610813e16..., userDataDir: C:\Users\VANDAN~1.JAI\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60613}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.86, webStorageEnabled: true}
-Session ID: da3a8673faea485b58eee747ba42cd08]]>
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.20 (8e2b610813e16..., userDataDir: C:\Users\VANDAN~1.JAI\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52531}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.86, webStorageEnabled: true}
+Session ID: a605cf0b369cfe8b6545113e2a89754e]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
@@ -64,10 +110,10 @@ Session ID: da3a8673faea485b58eee747ba42cd08]]>
 Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'NODE923', ip: '10.210.3.209', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+System info: host: 'NODE923', ip: '10.210.1.60', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.20 (8e2b610813e16..., userDataDir: C:\Users\VANDAN~1.JAI\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60613}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.86, webStorageEnabled: true}
-Session ID: da3a8673faea485b58eee747ba42cd08
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.20 (8e2b610813e16..., userDataDir: C:\Users\VANDAN~1.JAI\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52531}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.86, webStorageEnabled: true}
+Session ID: a605cf0b369cfe8b6545113e2a89754e
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -87,16 +133,16 @@ at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 at java.lang.reflect.Method.invoke(Unknown Source)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+at com.sun.proxy.$Proxy14.isDisplayed(Unknown Source)
 at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
 at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
 at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
 at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-at com.aperture.utilities.Waits.waitTillVisibilityOf(Waits.java:22)
+at com.aperture.utilities.Waits.waitTillVisibilityOf(Waits.java:23)
 at com.aperture.pageobjects.LoginPage1.setUsername(LoginPage1.java:52)
-at com.aperture.testcases.LoginPage_Test.loginTest(LoginPage_Test.java:30)
-at com.aperture.testcases.Add_Account_Test.runlogin(Add_Account_Test.java:32)
+at com.aperture.testcases.LoginPage_Test.loginTest(LoginPage_Test.java:20)
+at com.aperture.testcases.Add_Project_Test.runlogin(Add_Project_Test.java:25)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -131,77 +177,210 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- runlogin -->
-        <test-method status="PASS" signature="addLogger()[pri:0, instance:com.aperture.testcases.Add_Account_Test@3fee9989]" name="addLogger" is-config="true" duration-ms="1" started-at="2019-04-01T11:30:36Z" finished-at="2019-04-01T11:30:36Z">
+        <test-method status="PASS" signature="addLogger()[pri:0, instance:com.aperture.testcases.Add_Project_Test@2f686d1f]" name="addLogger" is-config="true" duration-ms="2" started-at="2019-04-09T07:40:12Z" finished-at="2019-04-09T07:40:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addLogger -->
-        <test-method status="PASS" signature="runlogin()[pri:0, instance:com.aperture.testcases.Add_Account_Test@3fee9989]" name="runlogin" duration-ms="7615" started-at="2019-04-01T11:30:36Z" finished-at="2019-04-01T11:30:44Z">
+        <test-method status="PASS" signature="runlogin()[pri:0, instance:com.aperture.testcases.Add_Project_Test@2f686d1f]" name="runlogin" duration-ms="7129" started-at="2019-04-09T07:40:12Z" finished-at="2019-04-09T07:40:19Z">
           <reporter-output>
             <line>
               <![CDATA[Retrying test runlogin with status SUCCESS]]>
             </line>
           </reporter-output>
         </test-method> <!-- runlogin -->
-        <test-method status="PASS" signature="addLogger()[pri:0, instance:com.aperture.testcases.Add_Account_Test@3fee9989]" name="addLogger" is-config="true" duration-ms="1" started-at="2019-04-01T11:30:44Z" finished-at="2019-04-01T11:30:44Z">
+        <test-method status="PASS" signature="addLogger()[pri:0, instance:com.aperture.testcases.Add_Project_Test@2f686d1f]" name="addLogger" is-config="true" duration-ms="1" started-at="2019-04-09T07:40:19Z" finished-at="2019-04-09T07:40:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addLogger -->
-        <test-method status="SKIP" signature="navigate_To_Account()[pri:1, instance:com.aperture.testcases.Add_Account_Test@3fee9989]" name="navigate_To_Account" duration-ms="57" started-at="2019-04-01T11:30:44Z" finished-at="2019-04-01T11:30:44Z">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
+        <test-method status="PASS" signature="navigate_To_Project()[pri:1, instance:com.aperture.testcases.Add_Project_Test@2f686d1f]" name="navigate_To_Project" duration-ms="771" started-at="2019-04-09T07:40:19Z" finished-at="2019-04-09T07:40:20Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Retrying test navigate_To_Project with status SUCCESS]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- navigate_To_Project -->
+        <test-method status="PASS" signature="addLogger()[pri:0, instance:com.aperture.testcases.Add_Project_Test@2f686d1f]" name="addLogger" is-config="true" duration-ms="3" started-at="2019-04-09T07:40:20Z" finished-at="2019-04-09T07:40:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addLogger -->
+        <test-method status="PASS" signature="clickOnAddAccount()[pri:2, instance:com.aperture.testcases.Add_Project_Test@2f686d1f]" name="clickOnAddAccount" duration-ms="210" started-at="2019-04-09T07:40:20Z" finished-at="2019-04-09T07:40:20Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Retrying test clickOnAddAccount with status SUCCESS]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- clickOnAddAccount -->
+        <test-method status="PASS" signature="addProjectPositiveCases(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.aperture.testcases.Add_Project_Test@2f686d1f]" name="addProjectPositiveCases" duration-ms="26204" started-at="2019-04-09T07:40:21Z" data-provider="projectdata" finished-at="2019-04-09T07:40:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Rodan + Fields]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[R]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Vandana Jain]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Itrack]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Apperture]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Vandana Jain]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Vandana Jain]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Investment]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Functional CMS,Commerce,Functional Commerce]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Waiting to Start]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[PHP Java Selenium]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[05/05/2018]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[12/10/2018]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Retrying test addProjectPositiveCases with status SUCCESS]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addProjectPositiveCases -->
+        <test-method status="PASS" signature="addLogger()[pri:0, instance:com.aperture.testcases.Add_Project_Test@2f686d1f]" name="addLogger" is-config="true" duration-ms="0" started-at="2019-04-09T07:40:21Z" finished-at="2019-04-09T07:40:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addLogger -->
+        <test-method status="PASS" signature="addLogger()[pri:0, instance:com.aperture.testcases.Add_Project_Test@2f686d1f]" name="addLogger" is-config="true" duration-ms="1" started-at="2019-04-09T07:40:48Z" finished-at="2019-04-09T07:40:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addLogger -->
+        <test-method status="SKIP" signature="addProjectPositiveCases(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.aperture.testcases.Add_Project_Test@2f686d1f]" name="addProjectPositiveCases" duration-ms="4344" started-at="2019-04-09T07:40:48Z" data-provider="projectdata" finished-at="2019-04-09T07:40:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Rodan + Fields]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[RN]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Vandana Jain]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Itrack123]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Apperture123]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Vandana Jain]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Vandana Jain]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Fix Bid]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[United States]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Functional CMS,Commerce,Functional Commerce]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Work in Progress]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[php java Automation Testing]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[05/05/2018]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[12/10/2018]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IndexOutOfBoundsException">
             <message>
-              <![CDATA[stale element reference: element is not attached to the page document
-  (Session info: chrome=73.0.3683.86)
-  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'NODE923', ip: '10.210.3.209', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.20 (8e2b610813e16..., userDataDir: C:\Users\VANDAN~1.JAI\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60613}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.86, webStorageEnabled: true}
-Session ID: da3a8673faea485b58eee747ba42cd08]]>
+              <![CDATA[Index: 2, Size: 2]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=73.0.3683.86)
-  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'NODE923', ip: '10.210.3.209', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.20 (8e2b610813e16..., userDataDir: C:\Users\VANDAN~1.JAI\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60613}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.86, webStorageEnabled: true}
-Session ID: da3a8673faea485b58eee747ba42cd08
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:326)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
-at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-at com.aperture.utilities.Waits.waitTillElementToBeClickable(Waits.java:31)
-at com.aperture.pageobjects.NavigationMenu.clickOnAccounts(NavigationMenu.java:68)
-at com.aperture.testcases.NavigationMenu_Test.navigateToAccount(NavigationMenu_Test.java:40)
-at com.aperture.testcases.Add_Account_Test.navigate_To_Account(Add_Account_Test.java:41)
+              <![CDATA[java.lang.IndexOutOfBoundsException: Index: 2, Size: 2
+at java.util.ArrayList.rangeCheck(Unknown Source)
+at java.util.ArrayList.get(Unknown Source)
+at com.aperture.reusablecode.CommonMethods.enterValues(CommonMethods.java:179)
+at com.aperture.pageobjects.AddProject.enterTechnology(AddProject.java:212)
+at com.aperture.testcases.Add_Project_Test.addProjectPositiveCases(Add_Project_Test.java:77)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -229,89 +408,344 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          </exception> <!-- java.lang.IndexOutOfBoundsException -->
           <reporter-output>
             <line>
-              <![CDATA[Retrying test navigate_To_Account with status FAILURE]]>
+              <![CDATA[Retrying test addProjectPositiveCases with status FAILURE]]>
             </line>
           </reporter-output>
-        </test-method> <!-- navigate_To_Account -->
-        <test-method status="PASS" signature="addLogger()[pri:0, instance:com.aperture.testcases.Add_Account_Test@3fee9989]" name="addLogger" is-config="true" duration-ms="1" started-at="2019-04-01T11:30:44Z" finished-at="2019-04-01T11:30:44Z">
+        </test-method> <!-- addProjectPositiveCases -->
+        <test-method status="PASS" signature="addLogger()[pri:0, instance:com.aperture.testcases.Add_Project_Test@2f686d1f]" name="addLogger" is-config="true" duration-ms="0" started-at="2019-04-09T07:40:52Z" finished-at="2019-04-09T07:40:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addLogger -->
-        <test-method status="PASS" signature="navigate_To_Account()[pri:1, instance:com.aperture.testcases.Add_Account_Test@3fee9989]" name="navigate_To_Account" duration-ms="189" started-at="2019-04-01T11:30:44Z" finished-at="2019-04-01T11:30:44Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Retrying test navigate_To_Account with status SUCCESS]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- navigate_To_Account -->
-        <test-method status="PASS" signature="addLogger()[pri:0, instance:com.aperture.testcases.Add_Account_Test@3fee9989]" name="addLogger" is-config="true" duration-ms="4" started-at="2019-04-01T11:30:45Z" finished-at="2019-04-01T11:30:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addLogger -->
-        <test-method status="PASS" signature="fetchdatafromexcel(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.aperture.testcases.Add_Account_Test@3fee9989]" name="fetchdatafromexcel" duration-ms="1" started-at="2019-04-01T11:30:45Z" data-provider="accountdata" finished-at="2019-04-01T11:30:45Z">
+        <test-method status="PASS" signature="addProjectPositiveCases(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.aperture.testcases.Add_Project_Test@2f686d1f]" name="addProjectPositiveCases" duration-ms="24506" started-at="2019-04-09T07:40:52Z" data-provider="projectdata" finished-at="2019-04-09T07:41:17Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[MCKZ]]>
+                <![CDATA[Rodan + Fields]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Mckenzie]]>
+                <![CDATA[RN]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[MNKZ_001]]>
+                <![CDATA[Vandana Jain]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[Manoj Nautiyal]]>
+                <![CDATA[Itrack123]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[Vandana Jain]]>
+                <![CDATA[Apperture123]]>
               </value>
             </param>
             <param index="5">
               <value>
-                <![CDATA[ India]]>
+                <![CDATA[Vandana Jain]]>
               </value>
             </param>
             <param index="6">
               <value>
-                <![CDATA[vandana.jain@gspann.com]]>
+                <![CDATA[Vandana Jain]]>
               </value>
             </param>
             <param index="7">
               <value>
-                <![CDATA[9896696802]]>
+                <![CDATA[Fix Bid]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[United States]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Functional CMS,Commerce,Functional Commerce]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Work in Progress]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[php java Automation Testing]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[05/05/2018]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[12/10/2018]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[Retrying test fetchdatafromexcel with status SUCCESS]]>
+              <![CDATA[Retrying test addProjectPositiveCases with status SUCCESS]]>
             </line>
           </reporter-output>
-        </test-method> <!-- fetchdatafromexcel -->
-        <test-method status="PASS" signature="addLogger()[pri:0, instance:com.aperture.testcases.Add_Account_Test@3fee9989]" name="addLogger" is-config="true" duration-ms="1" started-at="2019-04-01T11:30:45Z" finished-at="2019-04-01T11:30:45Z">
+        </test-method> <!-- addProjectPositiveCases -->
+        <test-method status="PASS" signature="addLogger()[pri:0, instance:com.aperture.testcases.Add_Project_Test@2f686d1f]" name="addLogger" is-config="true" duration-ms="1" started-at="2019-04-09T07:41:17Z" finished-at="2019-04-09T07:41:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addLogger -->
-        <test-method status="SKIP" signature="createAccountPositiveCase()[pri:3, instance:com.aperture.testcases.Add_Account_Test@3fee9989]" name="createAccountPositiveCase" duration-ms="3411" started-at="2019-04-01T11:30:45Z" finished-at="2019-04-01T11:30:48Z">
+        <test-method status="PASS" signature="addProjectPositiveCases(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.aperture.testcases.Add_Project_Test@2f686d1f]" name="addProjectPositiveCases" duration-ms="25903" started-at="2019-04-09T07:41:17Z" data-provider="projectdata" finished-at="2019-04-09T07:41:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Rodan + Fields]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[RND]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Vandana Jain]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[123Itrack]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Apperture]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Vandana Jain]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Vandana Jain]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Milestone]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[United States Minor Outlying Islands]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Functional CMS,Commerce,Functional Commerce]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[On Hold]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[PHP Java Selenium]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[05/05/2018]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[12/10/2018]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Retrying test addProjectPositiveCases with status SUCCESS]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addProjectPositiveCases -->
+        <test-method status="PASS" signature="addLogger()[pri:0, instance:com.aperture.testcases.Add_Project_Test@2f686d1f]" name="addLogger" is-config="true" duration-ms="1" started-at="2019-04-09T07:41:42Z" finished-at="2019-04-09T07:41:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addLogger -->
+        <test-method status="PASS" signature="addProjectPositiveCases(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.aperture.testcases.Add_Project_Test@2f686d1f]" name="addProjectPositiveCases" duration-ms="25211" started-at="2019-04-09T07:41:42Z" data-provider="projectdata" finished-at="2019-04-09T07:42:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Rodan + Fields]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[RNDD]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Vandana Jain]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Itrack]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[123Apperture]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Vandana Jain]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Vandana Jain]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Bench]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Bosnia and Herzegovina]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Functional CMS,Commerce,Functional Commerce]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Work in Progress]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[PHP Java Selenium]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[05/05/2018]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[12/10/2018]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Retrying test addProjectPositiveCases with status SUCCESS]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addProjectPositiveCases -->
+        <test-method status="SKIP" signature="addProjectNegativeCases(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:com.aperture.testcases.Add_Project_Test@2f686d1f]" name="addProjectNegativeCases" duration-ms="21037" started-at="2019-04-09T07:42:08Z" data-provider="projectdatabugs" finished-at="2019-04-09T07:42:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Rodan ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[RND#]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Vandana Malik]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Itrack_ _ _]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Apperture  mkl]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Vandana,Jain]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[VandanaJain]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Investmemt]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Indiaae]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Fnctional CMS,Cmmerce,Funtional Commerce]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[        ]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[PHP Java $*%*$@)]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[05-05-0000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[05-05-0000]]>
+              </value>
+            </param>
+          </params>
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Expected Results: Account created Successfully]]>
+              <![CDATA[Customer Manager Passed]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Expected Results: Account created Successfully
-at com.aperture.testcases.Add_Account_Test.createAccountPositiveCase(Add_Account_Test.java:73)
+              <![CDATA[java.lang.AssertionError: Customer Manager Passed
+at org.testng.Assert.fail(Assert.java:96)
+at com.aperture.reusablecode.AssertTest.assertInvalidValue(AssertTest.java:86)
+at com.aperture.testcases.Add_Project_Test.addProjectNegativeCases(Add_Project_Test.java:107)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -342,68 +776,100 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
-              <![CDATA[Retrying test createAccountPositiveCase with status FAILURE]]>
+              <![CDATA[Retrying test addProjectNegativeCases with status FAILURE]]>
             </line>
           </reporter-output>
-        </test-method> <!-- createAccountPositiveCase -->
-        <test-method status="PASS" signature="addLogger()[pri:0, instance:com.aperture.testcases.Add_Account_Test@3fee9989]" name="addLogger" is-config="true" duration-ms="1" started-at="2019-04-01T11:30:48Z" finished-at="2019-04-01T11:30:48Z">
+        </test-method> <!-- addProjectNegativeCases -->
+        <test-method status="PASS" signature="addLogger()[pri:0, instance:com.aperture.testcases.Add_Project_Test@2f686d1f]" name="addLogger" is-config="true" duration-ms="0" started-at="2019-04-09T07:42:08Z" finished-at="2019-04-09T07:42:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addLogger -->
-        <test-method status="FAIL" signature="createAccountPositiveCase()[pri:3, instance:com.aperture.testcases.Add_Account_Test@3fee9989]" name="createAccountPositiveCase" duration-ms="21" started-at="2019-04-01T11:30:48Z" finished-at="2019-04-01T11:30:48Z">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
+        <test-method status="PASS" signature="addLogger()[pri:0, instance:com.aperture.testcases.Add_Project_Test@2f686d1f]" name="addLogger" is-config="true" duration-ms="1" started-at="2019-04-09T07:42:29Z" finished-at="2019-04-09T07:42:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addLogger -->
+        <test-method status="FAIL" signature="addProjectNegativeCases(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:com.aperture.testcases.Add_Project_Test@2f686d1f]" name="addProjectNegativeCases" duration-ms="21077" started-at="2019-04-09T07:42:29Z" data-provider="projectdatabugs" finished-at="2019-04-09T07:42:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Rodan ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[RND#]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Vandana Malik]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Itrack_ _ _]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Apperture  mkl]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Vandana,Jain]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[VandanaJain]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Investmemt]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Indiaae]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Fnctional CMS,Cmmerce,Funtional Commerce]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[        ]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[PHP Java $*%*$@)]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[05-05-0000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[05-05-0000]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[stale element reference: element is not attached to the page document
-  (Session info: chrome=73.0.3683.86)
-  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'NODE923', ip: '10.210.3.209', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.20 (8e2b610813e16..., userDataDir: C:\Users\VANDAN~1.JAI\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60613}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.86, webStorageEnabled: true}
-Session ID: da3a8673faea485b58eee747ba42cd08]]>
+              <![CDATA[Customer Manager Passed]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=73.0.3683.86)
-  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'NODE923', ip: '10.210.3.209', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.20 (8e2b610813e16..., userDataDir: C:\Users\VANDAN~1.JAI\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60613}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.86, webStorageEnabled: true}
-Session ID: da3a8673faea485b58eee747ba42cd08
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:326)
-at sun.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
-at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-at com.aperture.utilities.Waits.waitTillElementToBeClickable(Waits.java:31)
-at com.aperture.pageobjects.AddAccounts.clickOnAddAccount(AddAccounts.java:103)
-at com.aperture.testcases.Add_Account_Test.createAccountPositiveCase(Add_Account_Test.java:62)
+              <![CDATA[java.lang.AssertionError: Customer Manager Passed
+at org.testng.Assert.fail(Assert.java:96)
+at com.aperture.reusablecode.AssertTest.assertInvalidValue(AssertTest.java:86)
+at com.aperture.testcases.Add_Project_Test.addProjectNegativeCases(Add_Project_Test.java:107)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -431,18 +897,1222 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
-              <![CDATA[Retrying test createAccountPositiveCase with status FAILURE]]>
+              <![CDATA[Retrying test addProjectNegativeCases with status FAILURE]]>
             </line>
           </reporter-output>
-        </test-method> <!-- createAccountPositiveCase -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.aperture.testcases.Add_Account_Test@3fee9989]" name="tearDown" is-config="true" duration-ms="1289" started-at="2019-04-01T11:30:49Z" finished-at="2019-04-01T11:30:50Z">
+        </test-method> <!-- addProjectNegativeCases -->
+        <test-method status="PASS" signature="addLogger()[pri:0, instance:com.aperture.testcases.Add_Project_Test@2f686d1f]" name="addLogger" is-config="true" duration-ms="1" started-at="2019-04-09T07:42:50Z" finished-at="2019-04-09T07:42:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addLogger -->
+        <test-method status="FAIL" signature="addProjectNegativeCases(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:com.aperture.testcases.Add_Project_Test@2f686d1f]" name="addProjectNegativeCases" duration-ms="63129" started-at="2019-04-09T07:42:50Z" data-provider="projectdatabugs" finished-at="2019-04-09T07:43:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[United Health ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[APRTG123$]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Vandana%Jain]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Itrack#$%]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Apperture&)@#&$]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Vandana$Jain]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Vandana%Jain]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Fix Bidded]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[United]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Functional CMS,Functional CMS,Functional CMS]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[hold ]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[PHP 12345 Selenium php]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[29-Feb-19]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[29-Feb-19]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[OnShoreManager Passed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: OnShoreManager Passed
+at org.testng.Assert.fail(Assert.java:96)
+at com.aperture.reusablecode.AssertTest.assertInvalidValue(AssertTest.java:86)
+at com.aperture.testcases.Add_Project_Test.addProjectNegativeCases(Add_Project_Test.java:113)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Retrying test addProjectNegativeCases with status FAILURE]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addProjectNegativeCases -->
+        <test-method status="PASS" signature="addLogger()[pri:0, instance:com.aperture.testcases.Add_Project_Test@2f686d1f]" name="addLogger" is-config="true" duration-ms="0" started-at="2019-04-09T07:43:54Z" finished-at="2019-04-09T07:43:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addLogger -->
+        <test-method status="FAIL" signature="addProjectNegativeCases(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:com.aperture.testcases.Add_Project_Test@2f686d1f]" name="addProjectNegativeCases" duration-ms="63034" started-at="2019-04-09T07:43:54Z" data-provider="projectdatabugs" finished-at="2019-04-09T07:44:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[United Health ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[APRTG123$]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Vandana%Jain]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Itrack#$%]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Apperture&)@#&$]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Vandana$Jain]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Vandana%Jain]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Fix Bidded]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[United]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Functional CMS,Functional CMS,Functional CMS]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[hold ]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[PHP 12345 Selenium php]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[29-Feb-19]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[29-Feb-19]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[OnShoreManager Passed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: OnShoreManager Passed
+at org.testng.Assert.fail(Assert.java:96)
+at com.aperture.reusablecode.AssertTest.assertInvalidValue(AssertTest.java:86)
+at com.aperture.testcases.Add_Project_Test.addProjectNegativeCases(Add_Project_Test.java:113)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Retrying test addProjectNegativeCases with status FAILURE]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addProjectNegativeCases -->
+        <test-method status="FAIL" signature="addProjectNegativeCases(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:com.aperture.testcases.Add_Project_Test@2f686d1f]" name="addProjectNegativeCases" duration-ms="22362" started-at="2019-04-09T07:44:57Z" data-provider="projectdatabugs" finished-at="2019-04-09T07:45:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mckenzie]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[MKNZ()]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Vandana@Jain]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Mckenize890+_)(*(]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Apperture87348912]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Vandana$Jain]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Vandana%Jain]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Fixed]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Asia]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Functional CMS,Commerce,Manual]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Work ]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[PHP PHP PHP PHP PHP]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[32-Mar-18]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[32-Mar-18]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Project Name Passed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Project Name Passed
+at org.testng.Assert.fail(Assert.java:96)
+at com.aperture.reusablecode.AssertTest.assertInvalidValue(AssertTest.java:86)
+at com.aperture.testcases.Add_Project_Test.addProjectNegativeCases(Add_Project_Test.java:111)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Retrying test addProjectNegativeCases with status FAILURE]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addProjectNegativeCases -->
+        <test-method status="PASS" signature="addLogger()[pri:0, instance:com.aperture.testcases.Add_Project_Test@2f686d1f]" name="addLogger" is-config="true" duration-ms="0" started-at="2019-04-09T07:44:57Z" finished-at="2019-04-09T07:44:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addLogger -->
+        <test-method status="PASS" signature="addLogger()[pri:0, instance:com.aperture.testcases.Add_Project_Test@2f686d1f]" name="addLogger" is-config="true" duration-ms="1" started-at="2019-04-09T07:45:20Z" finished-at="2019-04-09T07:45:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addLogger -->
+        <test-method status="FAIL" signature="addProjectNegativeCases(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:com.aperture.testcases.Add_Project_Test@2f686d1f]" name="addProjectNegativeCases" duration-ms="22587" started-at="2019-04-09T07:45:20Z" data-provider="projectdatabugs" finished-at="2019-04-09T07:45:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mckenzie]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[MKNZ()]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Vandana@Jain]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Mckenize890+_)(*(]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Apperture87348912]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Vandana$Jain]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Vandana%Jain]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Fixed]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Asia]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Functional CMS,Commerce,Manual]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Work ]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[PHP PHP PHP PHP PHP]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[32-Mar-18]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[32-Mar-18]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Project Name Passed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Project Name Passed
+at org.testng.Assert.fail(Assert.java:96)
+at com.aperture.reusablecode.AssertTest.assertInvalidValue(AssertTest.java:86)
+at com.aperture.testcases.Add_Project_Test.addProjectNegativeCases(Add_Project_Test.java:111)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Retrying test addProjectNegativeCases with status FAILURE]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addProjectNegativeCases -->
+        <test-method status="FAIL" signature="addProjectNegativeCases(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:com.aperture.testcases.Add_Project_Test@2f686d1f]" name="addProjectNegativeCases" duration-ms="21162" started-at="2019-04-09T07:45:43Z" data-provider="projectdatabugs" finished-at="2019-04-09T07:46:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Rodan + Fields]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[RND#]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Vandana Malik]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Itrack()]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Apperture()]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Vandana Jain]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Vandana Jain]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Investmemt]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Indiaae]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Fnctional CMS,Cmmerce,Funtional Commerce]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[        ]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[PHP Java $*%*$@)]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[05-05-0000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[05-05-0000]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Customer Manager Passed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Customer Manager Passed
+at org.testng.Assert.fail(Assert.java:96)
+at com.aperture.reusablecode.AssertTest.assertInvalidValue(AssertTest.java:86)
+at com.aperture.testcases.Add_Project_Test.addProjectNegativeCases(Add_Project_Test.java:107)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Retrying test addProjectNegativeCases with status FAILURE]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addProjectNegativeCases -->
+        <test-method status="PASS" signature="addLogger()[pri:0, instance:com.aperture.testcases.Add_Project_Test@2f686d1f]" name="addLogger" is-config="true" duration-ms="0" started-at="2019-04-09T07:45:43Z" finished-at="2019-04-09T07:45:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addLogger -->
+        <test-method status="FAIL" signature="addProjectNegativeCases(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:com.aperture.testcases.Add_Project_Test@2f686d1f]" name="addProjectNegativeCases" duration-ms="21235" started-at="2019-04-09T07:46:04Z" data-provider="projectdatabugs" finished-at="2019-04-09T07:46:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Rodan + Fields]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[RND#]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Vandana Malik]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Itrack()]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Apperture()]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Vandana Jain]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Vandana Jain]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Investmemt]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Indiaae]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Fnctional CMS,Cmmerce,Funtional Commerce]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[        ]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[PHP Java $*%*$@)]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[05-05-0000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[05-05-0000]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Customer Manager Passed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Customer Manager Passed
+at org.testng.Assert.fail(Assert.java:96)
+at com.aperture.reusablecode.AssertTest.assertInvalidValue(AssertTest.java:86)
+at com.aperture.testcases.Add_Project_Test.addProjectNegativeCases(Add_Project_Test.java:107)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Retrying test addProjectNegativeCases with status FAILURE]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addProjectNegativeCases -->
+        <test-method status="PASS" signature="addLogger()[pri:0, instance:com.aperture.testcases.Add_Project_Test@2f686d1f]" name="addLogger" is-config="true" duration-ms="0" started-at="2019-04-09T07:46:04Z" finished-at="2019-04-09T07:46:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addLogger -->
+        <test-method status="PASS" signature="addLogger()[pri:0, instance:com.aperture.testcases.Add_Project_Test@2f686d1f]" name="addLogger" is-config="true" duration-ms="0" started-at="2019-04-09T07:46:26Z" finished-at="2019-04-09T07:46:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addLogger -->
+        <test-method status="FAIL" signature="addProjectNegativeCases(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:com.aperture.testcases.Add_Project_Test@2f686d1f]" name="addProjectNegativeCases" duration-ms="63204" started-at="2019-04-09T07:46:26Z" data-provider="projectdatabugs" finished-at="2019-04-09T07:47:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[United Health Group]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[APRTG123$]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Vandana%Jain]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Itrack#$%]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Apperture&)@#&$]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Vandana$Jain]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Vandana%Jain]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Fix Bidded]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[United]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Functional CMS,Functional CMS,Functional CMS]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Work in Progress]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[PHP 12345 Selenium php]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[99-99-9999]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[05-05-0000]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[OnShoreManager Passed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: OnShoreManager Passed
+at org.testng.Assert.fail(Assert.java:96)
+at com.aperture.reusablecode.AssertTest.assertInvalidValue(AssertTest.java:86)
+at com.aperture.testcases.Add_Project_Test.addProjectNegativeCases(Add_Project_Test.java:113)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Retrying test addProjectNegativeCases with status FAILURE]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addProjectNegativeCases -->
+        <test-method status="PASS" signature="addLogger()[pri:0, instance:com.aperture.testcases.Add_Project_Test@2f686d1f]" name="addLogger" is-config="true" duration-ms="1" started-at="2019-04-09T07:47:30Z" finished-at="2019-04-09T07:47:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addLogger -->
+        <test-method status="FAIL" signature="addProjectNegativeCases(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:com.aperture.testcases.Add_Project_Test@2f686d1f]" name="addProjectNegativeCases" duration-ms="63184" started-at="2019-04-09T07:47:30Z" data-provider="projectdatabugs" finished-at="2019-04-09T07:48:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[United Health Group]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[APRTG123$]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Vandana%Jain]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Itrack#$%]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Apperture&)@#&$]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Vandana$Jain]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Vandana%Jain]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Fix Bidded]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[United]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Functional CMS,Functional CMS,Functional CMS]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Work in Progress]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[PHP 12345 Selenium php]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[99-99-9999]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[05-05-0000]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[OnShoreManager Passed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: OnShoreManager Passed
+at org.testng.Assert.fail(Assert.java:96)
+at com.aperture.reusablecode.AssertTest.assertInvalidValue(AssertTest.java:86)
+at com.aperture.testcases.Add_Project_Test.addProjectNegativeCases(Add_Project_Test.java:113)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Retrying test addProjectNegativeCases with status FAILURE]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addProjectNegativeCases -->
+        <test-method status="PASS" signature="addLogger()[pri:0, instance:com.aperture.testcases.Add_Project_Test@2f686d1f]" name="addLogger" is-config="true" duration-ms="0" started-at="2019-04-09T07:48:33Z" finished-at="2019-04-09T07:48:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addLogger -->
+        <test-method status="FAIL" signature="addProjectNegativeCases(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:com.aperture.testcases.Add_Project_Test@2f686d1f]" name="addProjectNegativeCases" duration-ms="41555" started-at="2019-04-09T07:48:33Z" data-provider="projectdatabugs" finished-at="2019-04-09T07:49:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[eeee]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[MKNZ()]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Vandana@Jain]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Mckenize 890]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Apperture87348912]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Vandana$Jain]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Vandana%Jain]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Fixed]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Asia]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Functional CMS,Commerce,Manual]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Work in Progress]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[PHP PHP PHP PHP PHP]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[32-Mar-18]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[29-Feb-19]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Customer Project Name Passed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Customer Project Name Passed
+at org.testng.Assert.fail(Assert.java:96)
+at com.aperture.reusablecode.AssertTest.assertInvalidValue(AssertTest.java:86)
+at com.aperture.testcases.Add_Project_Test.addProjectNegativeCases(Add_Project_Test.java:109)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Retrying test addProjectNegativeCases with status FAILURE]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addProjectNegativeCases -->
+        <test-method status="PASS" signature="addLogger()[pri:0, instance:com.aperture.testcases.Add_Project_Test@2f686d1f]" name="addLogger" is-config="true" duration-ms="1" started-at="2019-04-09T07:49:15Z" finished-at="2019-04-09T07:49:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addLogger -->
+        <test-method status="FAIL" signature="addProjectNegativeCases(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:com.aperture.testcases.Add_Project_Test@2f686d1f]" name="addProjectNegativeCases" duration-ms="41413" started-at="2019-04-09T07:49:15Z" data-provider="projectdatabugs" finished-at="2019-04-09T07:49:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[eeee]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[MKNZ()]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Vandana@Jain]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Mckenize 890]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Apperture87348912]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Vandana$Jain]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Vandana%Jain]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Fixed]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Asia]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Functional CMS,Commerce,Manual]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Work in Progress]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[PHP PHP PHP PHP PHP]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[32-Mar-18]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[29-Feb-19]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Customer Project Name Passed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Customer Project Name Passed
+at org.testng.Assert.fail(Assert.java:96)
+at com.aperture.reusablecode.AssertTest.assertInvalidValue(AssertTest.java:86)
+at com.aperture.testcases.Add_Project_Test.addProjectNegativeCases(Add_Project_Test.java:109)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Retrying test addProjectNegativeCases with status FAILURE]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addProjectNegativeCases -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.aperture.testcases.Add_Project_Test@2f686d1f]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-04-09T07:49:57Z" finished-at="2019-04-09T07:49:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.aperture.testcases.Add_Account_Test -->
-    </test> <!-- Account -->
+        <test-method status="PASS" signature="postExecution()[pri:0, instance:com.aperture.testcases.Add_Project_Test@2f686d1f]" name="postExecution" is-config="true" duration-ms="4" started-at="2019-04-09T07:49:57Z" finished-at="2019-04-09T07:49:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postExecution -->
+      </class> <!-- com.aperture.testcases.Add_Project_Test -->
+    </test> <!-- Project -->
   </suite> <!-- Suite -->
 </testng-results>

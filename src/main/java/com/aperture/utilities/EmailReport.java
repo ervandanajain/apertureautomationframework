@@ -59,7 +59,7 @@ public class EmailReport {
 			Message message = new MimeMessage(session);
  
 			// Set the from address
-			message.setFrom(new InternetAddress("demotest110032@gmail.com"));
+			message.setFrom(new InternetAddress("jainvvandana@gmail.com"));
  
 			// Set the recipient address
 			message.setRecipients(Message.RecipientType.TO,InternetAddress.parse("er.vandana.jain@gmail.com"));

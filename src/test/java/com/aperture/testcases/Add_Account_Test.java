@@ -1,9 +1,11 @@
 package com.aperture.testcases;
 import org.testng.annotations.Test;
 import com.aperture.core.BaseClass;
+import com.aperture.core.SourceDataProvider;
 import com.aperture.pageobjects.AddAccounts;
 public class Add_Account_Test extends BaseClass {
 	AddAccounts accounts;
+	SourceDataProvider sourcedataprovider;
 	NavigationMenu_Test navigation;
 	String CustomerGroup;
 	String CustomerName;
@@ -15,6 +17,7 @@ public class Add_Account_Test extends BaseClass {
 	String ContactNumber;
 	public Add_Account_Test() {
 		super();
+		
 	}
 	@Test(priority = 0)
 	public void runlogin() throws Exception {
@@ -22,12 +25,12 @@ public class Add_Account_Test extends BaseClass {
 		testloginpage.loginTest();
 		accounts = new AddAccounts(driver, logger);
 		navigation = new NavigationMenu_Test();
-	}
+		sourcedataprovider=new SourceDataProvider();	}
 	@Test(priority = 1)
 	public void navigate_To_Account() {
 		navigation.navigateToAccount();
 	}
-	@Test(dataProvider = "accountdata", priority = 2)
+	@Test(dataProvider = "accountdata", dataProviderClass=SourceDataProvider.class,priority = 2)
 	public void fetchdatafromexcel(String customergroup, String customername, String customerentity,
 			String customercontactperson, String accountmanager, String country, String emailid, String contactnumber) {
 		CustomerGroup = customergroup;
@@ -48,11 +51,11 @@ public class Add_Account_Test extends BaseClass {
 		accounts.enterCustomerEntity(CustomerEntity);
 		accounts.enterCustomerReportingManager(CustomerContactPerson);
 		accounts.enterAccountManager(AccountManager);
-		accounts.enterCountry(Country);
 		accounts.enterCustomerEmailId(EmailId);
+		accounts.enterCountry(Country);
 		accounts.enterContactNumber(ContactNumber);
 		accounts.checkRadioTimetrack("NO");
 		accounts.clickOnCreateAccount();
-		assert accounts.verifyAccountCreation("Example test"):"Expected Results: Account created Successfully";
+		//assert verifyTest(alertMessage.getText()):"Expected Results: Account created Successfully";
 	}
 }

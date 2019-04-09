@@ -2,8 +2,10 @@ package com.aperture.testcases;
 import org.testng.annotations.Test;
 import com.aperture.core.BaseClass;
 import com.aperture.pageobjects.AddResource;
+import com.aperture.reusablecode.AssertTest;
 public class Add_Resource_Test extends BaseClass {
 	AddResource resource;
+	AssertTest asserttest;
 	NavigationMenu_Test navigation;
 	String name;
 	String gender;
@@ -31,6 +33,7 @@ public class Add_Resource_Test extends BaseClass {
 	@Test(priority = 1)
 	public void navigateToResource() {
 		navigation.navigateToResource();
+		asserttest.assertTitle("Resource");
 	}
 	
 	@Test(priority = 2)

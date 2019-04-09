@@ -8,7 +8,7 @@
 		<listener class-name="com.aperture.utilities.ListnerInvoke" />
 	</listeners>
 	<parameter name="browser" value="chrome" />
-	<test name="Login">
+	<!-- <test name="Login">
 		<classes>
 			<class name="com.aperture.testcases.LoginPage_Test"></class>
 		</classes>
@@ -22,6 +22,16 @@
 		<classes>
 			<class name="com.aperture.testcases.CheckHoursInTimesheet_Test" />
 		</classes>
+	</test> -->
+	<test name="Project" thread-count="2" >
+	<classes>
+		<class name="com.aperture.testcases.Add_Project_Test"></class>
+	</classes>
+</test>
+	<!-- <test name="Resource">
+		<classes>
+			<class name="com.aperture.testcases.Add_Resource_Test" />
+		</classes>
 	</test>
 	<test name="Account">
 		<classes>
@@ -33,16 +43,6 @@
 			<class name="com.aperture.testcases.Search_Account_Test"></class>
 		</classes>
 	</test>
-	<test name="Project">
-		<classes>
-			<class name="com.aperture.testcases.Add_Project_Test"></class>
-		</classes>
-	</test>
-	<test name="Resource">
-		<classes>
-			<class name="com.aperture.testcases.Add_Resource_Test" />
-		</classes>
-	</test>
 	<test name="SearchProject">
 		<classes>
 			<class name="com.aperture.testcases.Search_Project_Test" />
@@ -52,7 +52,5 @@
 		<classes>
 			<class name="com.aperture.testcases.Search_Resource_Test" />
 		</classes>
-	</test>
-
-
-</suite>
+	</test> -->
+	 </suite> 

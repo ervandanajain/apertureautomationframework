@@ -6,11 +6,13 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.TestListenerAdapter;
 
+import com.aperture.core.BaseClass;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
@@ -25,15 +27,18 @@ public class Reporting extends TestListenerAdapter {
 	public ExtentReports extent;
 	public ExtentTest logger;
 	String reportpath;
-	EmailReport emailreport=new EmailReport();
 	String screenshotname;
 	WebDriver ldriver;
 	String dest;
+	File repfoldername=BaseClass.repfoldername;
+	
 	public void onStart(ITestContext testContext)
 	{
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());//time stamp
 		String repName="Test-Report-"+timeStamp+".html";
+		
 		reportpath=System.getProperty("user.dir")+ "/test-output/"+repName;
+		//reportpath=repfoldername+repName;
 		htmlReporter=new ExtentHtmlReporter(reportpath);//specify location of the report
 		htmlReporter.loadXMLConfig(System.getProperty("user.dir")+ "/extent-config.xml");
 		
@@ -65,7 +70,6 @@ public class Reporting extends TestListenerAdapter {
 		try {
 			dest = CaptureSceenShots.captureScreen( screenshotname);
 		} catch (IOException e1) {
-			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
 		
@@ -99,8 +103,13 @@ public class Reporting extends TestListenerAdapter {
 		File fl = new File(reportpath); 
 		if(fl.exists()) {
 			System.out.println("Yes file exists");
-		//extent.attachReporter(reporter);
-		emailreport.EmailExtentReport(reportpath);
+			try {
+			    FileUtils.copyFileToDirectory(fl,  repfoldername);
+			    fl.delete();
+			} catch (IOException e) {
+			    e.printStackTrace();
+			}
+		
 		}
 		else
 			System.out.println("No file do not exists");

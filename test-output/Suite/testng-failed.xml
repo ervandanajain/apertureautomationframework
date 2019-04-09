@@ -7,18 +7,20 @@
     <listener class-name="com.aperture.utilities.ListnerTransformer"/>
     <listener class-name="com.aperture.utilities.ListnerInvoke"/>
   </listeners>
-  <test thread-count="5" verbose="2" name="Account(failed)">
+  <test thread-count="5" verbose="2" name="Project(failed)">
     <classes>
-      <class name="com.aperture.testcases.Add_Account_Test">
+      <class name="com.aperture.testcases.Add_Project_Test">
         <methods>
-          <include name="navigate_To_Account"/>
-          <include name="createAccountPositiveCase"/>
+          <include name="postExecution"/>
+          <include name="addProjectNegativeCases" invocation-numbers="0 0 1 1 2 2 3 3 4 4 5 5"/>
+          <include name="addProjectPositiveCases" invocation-numbers="1"/>
           <include name="addLogger"/>
           <include name="tearDown"/>
-          <include name="runlogin"/>
           <include name="setup"/>
+          <include name="runlogin"/>
+          <include name="preSetup"/>
         </methods>
-      </class> <!-- com.aperture.testcases.Add_Account_Test -->
+      </class> <!-- com.aperture.testcases.Add_Project_Test -->
     </classes>
-  </test> <!-- Account(failed) -->
+  </test> <!-- Project(failed) -->
 </suite> <!-- Failed suite [Suite] -->

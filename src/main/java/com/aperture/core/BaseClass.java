@@ -1,48 +1,70 @@
 package com.aperture.core;
 
-import java.lang.reflect.Method;
+import java.io.File;
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
+import java.util.zip.ZipOutputStream;
 import org.apache.log4j.Logger;
-
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.support.CacheLookup;
+import org.openqa.selenium.support.FindBy;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
-
+import com.aperture.utilities.EmailReport;
 import com.aperture.utilities.ExcelUtils;
 import com.aperture.utilities.ReadConfig;
+import com.aperture.utilities.ZipFolder;
 
+import okhttp3.internal.http2.ErrorCode;
 
 public class BaseClass {
-
 	ReadConfig readconfig = new ReadConfig();
 	public static WebDriver driver;
+	public static Throwable cause;
+	public static ErrorCode code;
 	public String baseurl = readconfig.getApplicationURL();
 	public String username = readconfig.getUserName();
 	public String password = readconfig.getPassword();
+	EmailReport emailreport = new EmailReport();
 	public static Logger logger;
+	public static File repfoldername;
+	public static String repname;
+	public static String repfolderpath;
+	@FindBy(xpath = "//div[@role='alert']")
+	@CacheLookup
+	public static WebElement alertMessage;
 
 	public BaseClass() {
-
 	}
-static{
-        
-        SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy-hh-mm-ss");
-        System.setProperty("current.date.time", dateFormat.format(new Date()));
-    }
+
+	static {
+		SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy-hh-mm-ss");
+		repname = "Extent_Report-" + System.setProperty("current.date.time", dateFormat.format(new Date()));
+		repfoldername = new File(System.getProperty("user.dir") + "/test-output/" + repname);
+		repfolderpath = System.getProperty("user.dir") + "/test-output/" + repname;
+	}
+
+	@BeforeSuite(alwaysRun = true)
+	public static void preSetup() {
+		repfoldername.mkdir();
+	}
 
 	@Parameters("browser")
-	@BeforeClass(alwaysRun=true)
+	@BeforeClass(alwaysRun = true)
 	public void setup(String br) {
-
 		logger = Logger.getLogger("aperture");
 		PropertyConfigurator.configure("Log4j.properties");
 		if (br.equals("chrome")) {
@@ -60,47 +82,34 @@ static{
 		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.get(baseurl);
-		System.out.println("In Base class , Driver is "+driver);
+		System.out.println("In Base class , Driver is " + driver);
 		logger.info("URL is opened");
 	}
-	
-	@DataProvider(name = "accountdata")
-	 
-	    public Object[][] ExcelAccountData() throws Exception{
-	 
-	         Object[][] testObjArray = ExcelUtils.getTableArray("C:\\Users\\Vandana.jain\\eclipse-workspace\\gspann.aperture\\src\\main\\resources\\com\\aperture\\test\\AppertureDataProvider.xlsx","Account");
-	System.out.println("Testing Excel sheet");
-	         System.out.println(testObjArray[0][7].getClass().getName());
-	         return (testObjArray);
-	 }
-	
-	@DataProvider(name = "projectdata")
-	 
-    public Object[][] ExcelData() throws Exception{
- 
-         Object[][] testObjArray = ExcelUtils.getTableArray("C:\\Users\\Vandana.jain\\eclipse-workspace\\gspann.aperture\\src\\main\\resources\\com\\aperture\\test\\AppertureDataProvider.xlsx","Project");
-System.out.println("Testing Excel sheet");
-         System.out.println(testObjArray[0][7].getClass().getName());
-         return (testObjArray);
- }
-	
-	@DataProvider(name = "resourcedata")
-	 
-    public Object[][] ExcelResourceData() throws Exception{
- 
-         Object[][] testObjArray = ExcelUtils.getTableArray("C:\\Users\\Vandana.jain\\eclipse-workspace\\gspann.aperture\\src\\main\\resources\\com\\aperture\\test\\AppertureDataProvider.xlsx","Resource");
-System.out.println("Testing Excel sheet");
-         System.out.println(testObjArray[0][7].getClass().getName());
-         return (testObjArray);
- }
-	
-	@BeforeMethod(alwaysRun=true) public void addLogger() { 
-		  logger.info("===============================");
-		   }
 
-	
-	  @AfterClass(alwaysRun=true) public void tearDown() { 
-		  driver.quit(); }
-	 
+	@BeforeMethod(alwaysRun = true)
+	public void addLogger() {
+		logger.info("===============================");
+	}
 
+	/*
+	 * @AfterMethod(alwaysRun = true) public boolean verifyTest(String value) {
+	 * return alertMessage.getText().equals(value); }
+	 */
+	@AfterClass(alwaysRun = true)
+	public void tearDown() {
+		// driver.quit();
+	}
+
+	@AfterSuite(alwaysRun = true)
+	public void postExecution() {
+		// File file = new File("/Users/pankaj/sitemap.xml");
+		// String zipFileName = "/Users/pankaj/sitemap.zip";
+		File dir = new File(repfolderpath);
+		String zipDirName = repfolderpath + "/tmp.zip";
+		// ZipFolder.zipSingleFile(file, zipFileName);
+		ZipFolder zipFiles = new ZipFolder();
+		// zipFiles.zipDirectory(dir, zipDirName);
+		// System.out.println("Zipped folder now will email");
+		// emailreport.EmailExtentReport(repfolderpath + "//tmp.zip");
+	}
 }

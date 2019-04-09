@@ -47,7 +47,6 @@ public class TimesheetSubmission_Test extends BaseClass {
 	  { 
 		  tss.fillWeeklyTimeSheet();
 	      tss.clickOnTimeSheetSubmit();
-	      //WebElement div=driver.findElement(By.xpath(" //div[contains(@class, 'modal-body')]"));
 	      WebElement currentElement=  driver.switchTo().activeElement();
 	      System.out.println("element is "+currentElement);
 	      tss.enterCommentMessage("filling timesheet");
