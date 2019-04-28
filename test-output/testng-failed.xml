@@ -7,20 +7,20 @@
     <listener class-name="com.aperture.utilities.ListnerTransformer"/>
     <listener class-name="com.aperture.utilities.ListnerInvoke"/>
   </listeners>
-  <test thread-count="5" verbose="2" name="Project(failed)">
+  <test thread-count="5" verbose="2" name="Timesheet 2(failed)">
     <classes>
-      <class name="com.aperture.testcases.Add_Project_Test">
+      <class name="com.aperture.testcases.CheckHoursInTimesheet_Test">
         <methods>
+          <include name="runlogin"/>
           <include name="postExecution"/>
-          <include name="addProjectNegativeCases" invocation-numbers="0 0 1 1 2 2 3 3 4 4 5 5"/>
-          <include name="addProjectPositiveCases" invocation-numbers="1"/>
           <include name="addLogger"/>
+          <include name="hoursEqualToZero"/>
+          <include name="navigate_To_TimeSheet"/>
           <include name="tearDown"/>
           <include name="setup"/>
-          <include name="runlogin"/>
           <include name="preSetup"/>
         </methods>
-      </class> <!-- com.aperture.testcases.Add_Project_Test -->
+      </class> <!-- com.aperture.testcases.CheckHoursInTimesheet_Test -->
     </classes>
-  </test> <!-- Project(failed) -->
+  </test> <!-- Timesheet 2(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,17 @@
+2019-04-28 09:47:07,305 - aperture -INFO - URL is opened
+2019-04-28 09:47:07,317 - aperture -INFO - ===============================
+2019-04-28 09:47:11,457 - aperture -INFO - ===============================
+2019-04-28 09:47:11,765 - aperture -INFO - entered username
+2019-04-28 09:47:11,877 - aperture -INFO - clicked on next
+2019-04-28 09:47:14,648 - aperture -INFO - entered password
+2019-04-28 09:47:15,484 - aperture -INFO - click on signin
+2019-04-28 09:47:22,984 - aperture -INFO - refrence contain :com.aperture.utilities.Waits@4c1f22f3
+2019-04-28 09:47:22,988 - aperture -INFO - refrence contain :com.aperture.utilities.Waits@38234a38
+2019-04-28 09:47:23,006 - aperture -INFO - ===============================
+2019-04-28 09:47:23,011 - aperture -INFO - refrence contain :com.aperture.utilities.Waits@2f62ea70
+2019-04-28 09:47:23,011 - aperture -INFO - we are on project page
+2019-04-28 09:47:23,035 - aperture -INFO - project page link is [[ChromeDriver: chrome on XP (1bab6d55797a1df42a5e94698ee07312)] -> xpath: //a[@routerlink='/projects/list-projects']//*[text()='Project']]
+2019-04-28 09:47:23,082 - aperture -INFO - on project refrence Project
+2019-04-28 09:47:23,149 - aperture -INFO - clicked on Project
+2019-04-28 09:47:25,685 - aperture -INFO - ===============================
+2019-04-28 09:47:25,767 - aperture -INFO - user clicked on add account addAdd Project

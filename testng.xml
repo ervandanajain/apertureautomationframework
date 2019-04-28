@@ -17,18 +17,18 @@
 		<classes>
 			<class name="com.aperture.testcases.TimesheetSubmission_Test"></class>
 		</classes>
-	</test>
+	</test> -->
 	<test name="Timesheet 2">
 		<classes>
 			<class name="com.aperture.testcases.CheckHoursInTimesheet_Test" />
 		</classes>
-	</test> -->
-	<test name="Project" thread-count="2" >
+	</test> 
+	<!-- <test name="Project" thread-count="2" >
 	<classes>
 		<class name="com.aperture.testcases.Add_Project_Test"></class>
 	</classes>
 </test>
-	<!-- <test name="Resource">
+	 <test name="Resource">
 		<classes>
 			<class name="com.aperture.testcases.Add_Resource_Test" />
 		</classes>

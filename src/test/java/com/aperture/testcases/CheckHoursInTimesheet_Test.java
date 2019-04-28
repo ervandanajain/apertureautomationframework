@@ -1,6 +1,7 @@
 package com.aperture.testcases;
 
 import java.io.IOException;
+import java.text.ParseException;
 
 import org.testng.Assert;
 
@@ -8,8 +9,10 @@ import org.testng.annotations.Test;
 
 
 import com.aperture.core.BaseClass;
+import com.aperture.core.SourceDataProvider;
 import com.aperture.pageobjects.AddAccounts;
 import com.aperture.pageobjects.CheckHoursInTimesheet;
+import com.aperture.reusablecode.AssertTest;
 
 public class CheckHoursInTimesheet_Test extends BaseClass {
 	CheckHoursInTimesheet checkhours;
@@ -17,6 +20,7 @@ public class CheckHoursInTimesheet_Test extends BaseClass {
 	String type;
 	String msg;
 	String expectedType;
+	AssertTest asserttest;
 	
 	public CheckHoursInTimesheet_Test() throws IOException {
 		super();
@@ -29,8 +33,8 @@ public class CheckHoursInTimesheet_Test extends BaseClass {
 		testloginpage.loginTest();
 		checkhours=new CheckHoursInTimesheet(driver,logger);
 		navigation = new NavigationMenu_Test();
-	
-		
+		asserttest = new AssertTest(driver, logger);
+
 	}
 	
 	@Test(priority = 1)
@@ -46,10 +50,14 @@ public class CheckHoursInTimesheet_Test extends BaseClass {
 		checkhours.clickOnNext();
 	}
 	
-	@Test(priority=3)
-	public void hoursEqualToZero () 
+	@Test(dataProvider = "timesheethoursdata", dataProviderClass = SourceDataProvider.class,priority = 3)
+	public void hoursEqualToZero (String hour,String message,String comment) throws ParseException 
 	{
-		checkhours.fillWeeklyTimeSheet(checkhours.hoursEqualToZero());
+		System.out.println("tmesheet hours "+hour);
+		checkhours.fillWeeklyTimeSheet(hour);
+		if(checkhours.getWeekStatus()>0)
+			checkhours.clickOnTimeSheetSave();
+		else {
 		checkhours.clickOnTimeSheetSubmit();
 		 type=checkhours.checkPopUpType();
 		 msg="Comment is mandatory when Total working hours per day is 0";
@@ -57,11 +65,12 @@ public class CheckHoursInTimesheet_Test extends BaseClass {
 		System.out.println("returned type is "+type);
 		boolean res=checkhours.handlePopUp(type,expectedType,msg);
 		Assert.assertEquals(true, res);
+		driver.switchTo().activeElement().click();
 		
-		
+		}
 		
 	}
-	@Test(priority=4)
+	/*@Test(priority=4)
 	public void hoursBetweenZeroAndEight()
 	{
 		checkhours.fillWeeklyTimeSheet(checkhours.hoursBetweenZeroAndEight());
@@ -83,6 +92,7 @@ public class CheckHoursInTimesheet_Test extends BaseClass {
 		 msg="Comment is mandatory when worked for more than 8 hours on the same project";
 		expectedType="alertmessage";
 		checkhours.handlePopUp(type,expectedType,msg);
+		driver.switchTo().activeElement().click();
 		
 	}
 	@Test(priority=6)
@@ -97,5 +107,5 @@ public class CheckHoursInTimesheet_Test extends BaseClass {
 		checkhours.handlePopUp(type,expectedType,msg);
 		driver.switchTo().activeElement().click();
 		
-	}
+	}*/
 }

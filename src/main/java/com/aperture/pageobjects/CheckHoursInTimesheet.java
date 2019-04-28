@@ -1,5 +1,15 @@
 package com.aperture.pageobjects;
 
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import java.util.Locale;
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -30,7 +40,31 @@ public class CheckHoursInTimesheet  {
 	@FindBy(id = "main-heading")
 	@CacheLookup
 	WebElement divpageheading;
+	
+	@FindBy(xpath = "//tr[contains(@class,'project-row')]/td[contains(@class,'first-child')]")
+	@CacheLookup
+	List<WebElement> rowProjectName;
+	
+	@FindBy(xpath="//div[contains(@class,'totalDayHoursDiv ')]")
+	@CacheLookup
+	List<WebElement> totalhour;
+	
+	@FindBy(xpath="//textarea[@type='text']")
+	@CacheLookup
+	WebElement commentfortotalhour;
+	
+	@FindBy(xpath="//div[contains(@class,'mat-input-subscript-wrapper')]]")
+	@CacheLookup
+	WebElement divcommentfortotalhour;
 
+	@FindBy(xpath = "//span[contains(@class,'projectName')]")
+	@CacheLookup
+	WebElement spanprojectname;
+	
+	@FindBy(xpath="//span[@class='week-date']")
+	@CacheLookup
+	WebElement spanDate;
+	
 	@FindBy(xpath = "//*[@id='weeklyTSRow']/tbody/tr[2]/td[10]/div")
 	@CacheLookup
 	WebElement checkstatus;
@@ -39,7 +73,7 @@ public class CheckHoursInTimesheet  {
 	@CacheLookup
 	WebElement btnnexttimesheet;
 	
-	@FindBy(xpath="//*[@class='mat-dialog-container ng-tns-c19-8 ng-trigger ng-trigger-slideDialog ng-star-inserted']")
+	@FindBy(xpath="//*[contains(@class,'mat-dialog-container')]")
 	WebElement commentDialogbox;
 	
 	@FindBy(xpath="//div[contains(@class, 'modal-body')]")
@@ -51,12 +85,55 @@ public class CheckHoursInTimesheet  {
 	@FindBy(xpath="//button[@type='button' and contains(., 'Submit')]")
 	WebElement submitComment;
 	
+	
 	@FindBy(xpath="//button[@class='cancel-submit mat-button' and contains(., 'Cancel')]")
 	WebElement cancelComment;
+	
+	@FindBy(xpath="//button[@id='save-button']")
+	WebElement btntimesheetsave;
 	
 	@FindBy(id="submit-button")
 	@CacheLookup
 	WebElement btntimesheetsubmit;
+	
+	@FindBy(xpath="//button[contains(@class,'mat-raised-button')]")
+	@CacheLookup
+	List<WebElement> saveandsubmitbutton;
+	
+	
+	public  int getWeekStatus() throws ParseException {
+		// TODO Auto-generated method stub
+		String date=spanDate.getText();
+		String splitdate[]=date.split("-");
+		String splitdate2[]=splitdate[1].split(",");
+		if(splitdate[0].contains("Dec") && splitdate[1].contains("Jan"))
+		splitdate2[1]=Integer.toString(Integer.parseInt(splitdate2[1].trim())-1);
+		String startdate=splitdate[0].trim()+", "+splitdate2[1].trim();
+		String enddate=splitdate[1].trim();
+		System.out.println(startdate);
+		System.out.println(enddate);
+
+		final DateFormat sdf = new SimpleDateFormat("dd MMM, yyyy", Locale.ENGLISH);
+		
+        Date edate = sdf.parse(enddate);
+        Date sdate = sdf.parse(startdate);
+        return checkDateWeek(sdate,edate);
+        }
+	
+	public int checkDateWeek(Date sdate,Date edate)
+	{
+		int status=0;
+		Date currentdate = new Date();
+		if(sdate.before(currentdate))
+			status=-1;//previous week
+		else if(sdate.before(currentdate)||edate.after(currentdate)) 
+         status=0;//current week
+         else if (edate.before(currentdate))
+        	 status=1;//next week
+         return status;
+        }
+	
+
 	
 	public boolean checkheading() {
 		wait.waitTillElementToBeClickable(divpageheading);
@@ -79,20 +156,49 @@ public class CheckHoursInTimesheet  {
 		btnnexttimesheet.click();
 	}
 	
-	public void fillWeeklyTimeSheet(int hours) {
+	public String checkNumberofProject() {
+	int count=rowProjectName.size();
+	if((count==1)&&(rowProjectName.get(0).getText().contains("APP-Dev Bench")))
+		return "Bench";
+	else return "Allocated";
+	}
+	
+	public boolean checkTotalHourPerDay(WebElement totalhour) {
+		wait.waitTillVisibilityOf(totalhour);
+		String totalhrs=totalhour.getText();
+		int totalhours=Integer.parseInt(totalhrs);
+		if((totalhours==0)||(totalhours>8))
+			if(totalhrs.contains("**")) {
+				totalhour.click();
+				wait.waitTillVisibilityOf(commentfortotalhour);
+				commentfortotalhour.sendKeys("abcd");
+				divcommentfortotalhour.click();
+				return true;
+			}
+			else return false;
+		else return true;
+	}
+	public void fillWeeklyTimeSheet(String hour2) {
 		String locator = null;
-		for (int i = 0; i <= 4; i++) {
+		for (int i = 1; i <= 5; i++) {
 			llogger.info("user filling timesheet ");
 			locator = "//*[@id='0-" + i + "']";
 			llogger.info("locator of timesheet area is "+locator);
 			WebElement weeklyTime = ldriver.findElement(By.xpath(locator));
-			llogger.info("Driver is " + ldriver +" Element is "+ weeklyTime);
 			wait.waitTillVisibilityOf(weeklyTime);
-			String hour= Integer.toString(hours);
 			weeklyTime.clear();
-			weeklyTime.sendKeys(hour);			
+			weeklyTime.sendKeys(hour2);	
+			boolean checkttlhr= checkTotalHourPerDay(totalhour.get(i));
+			
 		}		
 		}
+	
+	public void clickOnTimeSheetSave() {
+		llogger.info("user clicked on timesheet save button");
+		wait.waitTillElementToBeClickable(btntimesheetsave);
+		btntimesheetsave.click();
+	}
+	
 	public void clickOnTimeSheetSubmit() {
 		llogger.info("user clicked on timesheet submit button");
 		wait.waitTillElementToBeClickable(btntimesheetsubmit);
@@ -102,6 +208,11 @@ public class CheckHoursInTimesheet  {
 	public String checkPopUpType() {
 		checkhours=new CheckHoursInTimesheet(ldriver,llogger);
 		//wait.waitTillVisibilityOf(commentBoxMessage);
+		List<WebElement> popupType=new ArrayList<WebElement>();
+		//popupType.add(commentBoxMessage);
+		//popupType.add(enterComment);
+		popupType.add(ldriver.switchTo().activeElement());
+		System.out.println(popupType);
 		ldriver.switchTo().activeElement();
 		llogger.info("Alert box  " +commentBoxMessage.isDisplayed());
 		//llogger.info("Comment box  " +enterComment.isDisplayed());

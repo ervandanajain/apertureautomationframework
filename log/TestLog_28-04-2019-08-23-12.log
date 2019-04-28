@@ -1,0 +1,19 @@
+2019-04-28 20:23:24,097 - aperture -INFO - URL is opened
+2019-04-28 20:23:24,119 - aperture -INFO - ===============================
+2019-04-28 20:23:27,564 - aperture -INFO - ===============================
+2019-04-28 20:23:28,219 - aperture -INFO - entered username
+2019-04-28 20:23:28,309 - aperture -INFO - clicked on next
+2019-04-28 20:23:30,643 - aperture -INFO - entered password
+2019-04-28 20:23:32,022 - aperture -INFO - click on signin
+2019-04-28 20:23:37,596 - aperture -INFO - refrence contain :com.aperture.utilities.Waits@3eb631b8
+2019-04-28 20:23:37,610 - aperture -INFO - ===============================
+2019-04-28 20:23:37,614 - aperture -INFO - refrence contain :com.aperture.utilities.Waits@5491f68b
+2019-04-28 20:23:37,671 - aperture -INFO - on timesheet refrence Timesheet
+2019-04-28 20:23:37,753 - aperture -INFO - refrence contain :com.aperture.utilities.Waits@5491f68b 2
+2019-04-28 20:23:37,754 - aperture -INFO - refrence contain :com.aperture.utilities.Waits@710d7aff
+2019-04-28 20:23:37,754 - aperture -INFO - we are on mytimesheet page
+2019-04-28 20:23:37,771 - aperture -INFO - mytimesheet page link is [[ChromeDriver: chrome on XP (84686dd42cf42016da26d6316294159d)] -> xpath: //*[@id='navbarResponsive']/ul/li[1]/ul/li[1]/a]
+2019-04-28 20:23:37,819 - aperture -INFO - on my timesheet refrence My Timesheet
+2019-04-28 20:23:37,869 - aperture -INFO - ===============================
+2019-04-28 20:23:39,513 - aperture -INFO - user checking status of timesheet [[ChromeDriver: chrome on XP (84686dd42cf42016da26d6316294159d)] -> xpath: //*[@id='weeklyTSRow']/tbody/tr[2]/td[10]/div]
+2019-04-28 20:23:39,593 - aperture -INFO - user clicked on next 

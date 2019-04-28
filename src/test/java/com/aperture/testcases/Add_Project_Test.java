@@ -80,12 +80,12 @@ public class Add_Project_Test extends BaseClass {
 		asserttest.assertValidValue("Project Start date");
 		project.enterProjectEndDate(projectenddate);
 		asserttest.assertValidValue("Project Enddate");
-//		project.selectPractices(practices);
-//		asserttest.assertValidValue("Practice");
+		project.selectPractices(practices);
+		asserttest.assertValidValue("Practice");
 		project.clickOnCreateProject();
 	}
 	
-	@Test(dataProvider = "projectdatabugs", dataProviderClass = SourceDataProvider.class,priority = 4)
+/*	@Test(dataProvider = "projectdatabugs", dataProviderClass = SourceDataProvider.class,priority = 4)
 
 	public void addProjectNegativeCases(String accountcode, String customerproject, String customermanager,
 			String customerprojectname, String projectname, String onshoremanager, String offshoremanager,
@@ -129,5 +129,5 @@ public class Add_Project_Test extends BaseClass {
 	//	asserttest.assertInvalidValue("Practice");
 		project.clickOnCreateProject();
 	}
-
+*/
 }

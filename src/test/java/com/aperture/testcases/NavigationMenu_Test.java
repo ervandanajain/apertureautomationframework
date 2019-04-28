@@ -18,7 +18,7 @@ public class NavigationMenu_Test extends BaseClass {
 	public void navigateToTimesheet() {
 		nm = new NavigationMenu(driver,logger);
 		nm.clickOnTimeSheet();
-		nm.clickOnMyTimeSheet();
+		//nm.clickOnMyTimeSheet();
 	}
 	
 	@Test

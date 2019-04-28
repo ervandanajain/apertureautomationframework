@@ -5,6 +5,19 @@ import org.testng.annotations.DataProvider;
 import com.aperture.utilities.ExcelUtils;
 
 public class SourceDataProvider {
+	
+	@DataProvider(name = "timesheethoursdata")
+
+	public Object[][] ExcelTimeSheetData() throws Exception {
+
+		Object[][] testObjArray = ExcelUtils.getTableArray(
+				"C:\\Users\\Vandana.jain\\eclipse-workspace\\gspann.aperture\\src\\main\\resources\\com\\aperture\\test\\AppertureDataProvider.xlsx",
+				"TimeSheetHours");
+		System.out.println("Testing Excel sheet");
+		System.out.println(testObjArray[0][7].getClass().getName());
+		return (testObjArray);
+	}
+	
 	@DataProvider(name = "accountdata")
 
 	public Object[][] ExcelAccountData() throws Exception {

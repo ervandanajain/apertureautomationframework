@@ -1,0 +1,39 @@
+2019-04-28 14:39:26,176 - aperture -INFO - URL is opened
+2019-04-28 14:39:26,193 - aperture -INFO - ===============================
+2019-04-28 14:39:28,564 - aperture -INFO - ===============================
+2019-04-28 14:39:28,767 - aperture -INFO - entered username
+2019-04-28 14:39:28,899 - aperture -INFO - clicked on next
+2019-04-28 14:39:31,162 - aperture -INFO - entered password
+2019-04-28 14:39:31,832 - aperture -INFO - click on signin
+2019-04-28 14:39:35,997 - aperture -INFO - refrence contain :com.aperture.utilities.Waits@54e7df6a
+2019-04-28 14:39:36,025 - aperture -INFO - ===============================
+2019-04-28 14:39:36,031 - aperture -INFO - refrence contain :com.aperture.utilities.Waits@545b995e
+2019-04-28 14:39:36,100 - aperture -INFO - on timesheet refrence Timesheet
+2019-04-28 14:39:36,153 - aperture -INFO - ===============================
+2019-04-28 14:39:36,154 - aperture -INFO - refrence contain :com.aperture.utilities.Waits@539d019
+2019-04-28 14:39:36,194 - aperture -INFO - on timesheet refrence Timesheet
+2019-04-28 14:39:36,234 - aperture -INFO - refrence contain :com.aperture.utilities.Waits@539d019 2
+2019-04-28 14:39:36,236 - aperture -INFO - refrence contain :com.aperture.utilities.Waits@7e4204e2
+2019-04-28 14:39:36,238 - aperture -INFO - we are on mytimesheet page
+2019-04-28 14:39:36,299 - aperture -INFO - mytimesheet page link is [[ChromeDriver: chrome on XP (37b3a40b5d4e7426e4d3755e12ea289e)] -> xpath: //*[@id='navbarResponsive']/ul/li[1]/ul/li[1]/a]
+2019-04-28 14:39:36,379 - aperture -INFO - on my timesheet refrence My Timesheet
+2019-04-28 14:39:36,436 - aperture -INFO - ===============================
+2019-04-28 14:39:38,352 - aperture -INFO - user checking status of timesheet [[ChromeDriver: chrome on XP (37b3a40b5d4e7426e4d3755e12ea289e)] -> xpath: //*[@id='weeklyTSRow']/tbody/tr[2]/td[10]/div]
+2019-04-28 14:39:38,463 - aperture -INFO - user clicked on next 
+2019-04-28 14:39:38,558 - aperture -INFO - ===============================
+2019-04-28 14:39:38,560 - aperture -INFO - user filling timesheet 
+2019-04-28 14:39:38,560 - aperture -INFO - locator of timesheet area is //*[@id='0-0']
+2019-04-28 14:39:39,260 - aperture -INFO - Driver is ChromeDriver: chrome on XP (37b3a40b5d4e7426e4d3755e12ea289e) Element is [[ChromeDriver: chrome on XP (37b3a40b5d4e7426e4d3755e12ea289e)] -> xpath: //*[@id='0-0']]
+2019-04-28 14:39:39,390 - aperture -INFO - user filling timesheet 
+2019-04-28 14:39:39,390 - aperture -INFO - locator of timesheet area is //*[@id='0-1']
+2019-04-28 14:39:39,409 - aperture -INFO - Driver is ChromeDriver: chrome on XP (37b3a40b5d4e7426e4d3755e12ea289e) Element is [[ChromeDriver: chrome on XP (37b3a40b5d4e7426e4d3755e12ea289e)] -> xpath: //*[@id='0-1']]
+2019-04-28 14:39:39,554 - aperture -INFO - user filling timesheet 
+2019-04-28 14:39:39,554 - aperture -INFO - locator of timesheet area is //*[@id='0-2']
+2019-04-28 14:39:39,572 - aperture -INFO - Driver is ChromeDriver: chrome on XP (37b3a40b5d4e7426e4d3755e12ea289e) Element is [[ChromeDriver: chrome on XP (37b3a40b5d4e7426e4d3755e12ea289e)] -> xpath: //*[@id='0-2']]
+2019-04-28 14:39:39,695 - aperture -INFO - user filling timesheet 
+2019-04-28 14:39:39,695 - aperture -INFO - locator of timesheet area is //*[@id='0-3']
+2019-04-28 14:39:39,716 - aperture -INFO - Driver is ChromeDriver: chrome on XP (37b3a40b5d4e7426e4d3755e12ea289e) Element is [[ChromeDriver: chrome on XP (37b3a40b5d4e7426e4d3755e12ea289e)] -> xpath: //*[@id='0-3']]
+2019-04-28 14:39:39,829 - aperture -INFO - user filling timesheet 
+2019-04-28 14:39:39,829 - aperture -INFO - locator of timesheet area is //*[@id='0-4']
+2019-04-28 14:39:39,848 - aperture -INFO - Driver is ChromeDriver: chrome on XP (37b3a40b5d4e7426e4d3755e12ea289e) Element is [[ChromeDriver: chrome on XP (37b3a40b5d4e7426e4d3755e12ea289e)] -> xpath: //*[@id='0-4']]
+2019-04-28 14:39:39,973 - aperture -INFO - user clicked on timesheet submit button
